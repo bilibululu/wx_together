@@ -1,0 +1,43 @@
+
+<view class="margin-xl padding-xl bg-white radius shadow shadow-lg">
+  <view class="flex justify-center">
+      <view class='text-center'>
+      <i-avatar src='{{avatarUrl}}'  size="large"  shape="circle"></i-avatar>
+        <view class="padding">{{nickName}}</view>
+      </view>
+  </view>
+</view>
+
+<view class="page"data-weui-theme="light">
+    <view class="page__bd">
+          <view class="weui-cells weui-cells_after-title">
+                  <view class="weui-cell weui-cell_active">
+                      <view class="weui-cell__hd">
+                        <view class="weui-label">姓名</view>
+                      </view>
+                      <view class="weui-cell__bd">
+                        <input type="text" placeholder="请输入姓名" bindinput="name1"></input>
+                      </view>
+                  </view>
+                  <view class="weui-cell weui-cell_active">
+                      <view class="weui-cell__hd">
+                        <view class="weui-label">学号</view>
+                      </view>
+                      <view class="weui-cell__bd">
+                        <input type="number" placeholder="请输入学号" bindinput="student1"></input>
+                      </view>
+                  </view>
+                  <view class="weui-cell weui-cell_active">
+                      <view class="weui-cell__hd">
+                        <view class="weui-label">联系方式</view>
+                      </view>
+                      <view class="weui-cell__bd">
+                        <input type="text" placeholder="微信/QQ" bindinput="number1"></input>
+                      </view>
+                  </view>
+           </view>
+           <view class="button-sp-area">
+                <button class="btn" bindtap="isTrue">确认</button>
+           </view>
+     </view>
+ </view>

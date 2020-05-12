@@ -1,0 +1,17 @@
+.btn {
+  width: 80%;
+  height: 130rpx;
+  margin-top: 100rpx;
+  background-color:rgb(48, 133, 126);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn::after {
+  border-radius: 98rpx;
+  border: 0; 
+}

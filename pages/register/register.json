@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-avatar": "../../dist/avatar/index"
+  },
+  "navigationBarTitleText": "实名认证"
+}

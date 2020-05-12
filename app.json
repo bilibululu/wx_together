@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/holes/holes",
+    "pages/index/index",
+    "pages/study/study",
+    "pages/register/register", 
+    "pages/sports/sports",
+    "pages/entertain/entertain",
+    "pages/routine/routine",
+    "pages/login/login",
+    "pages/publish/publish"
+  ],
+  "window": {
+    "backgroundColor": "#ddd",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#5cbcaf",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Together抱团",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ffffff",
+    "borderStyle": "black",
+    "backgroundColor": "#5cbcaf",
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "text": "动态",
+        "iconPath": "images/11.png",
+        "selectedIconPath": "images/1.png"
+      },
+      {
+        "pagePath": "pages/entertain/entertain",
+        "text": "发表",
+        "iconPath": "images/22.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我的",
+        "iconPath": "images/33.png",
+        "selectedIconPath": "images/3.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
