@@ -1,0 +1,28 @@
+create database together;
+use together;
+create table verified
+(
+vsn int(10) not null primary key
+vname varchar(10) not null,
+vopenid varchar(20) not null,
+vnickname varchar(20) not null,
+vwxoqq varchar(20) not null,
+vbool int not null
+);
+create table post
+(
+message_id int,
+pvsn int(10),
+pname varchar(10) not null,
+popenid varchar(100) not null,
+pnickname varchar(20) not null,
+pheadport varchar(100) not null,
+parea int not null,
+ptext text not null,
+ptime int(11),
+pphoto varchar(100) not null,
+primary key(message_id,pvsn),
+foreign key(pvsn) references verified(vsn)
+);
+
+
