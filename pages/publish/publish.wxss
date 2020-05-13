@@ -3,11 +3,30 @@ page{
   background-color: #efefef;
 }
 
+.btn {
+  width: 80%;
+  height: 130rpx;
+  margin-top: 60rpx;
+  background-color:rgb(48, 133, 126);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
 
 .textarea{
-  width:94%;
-  margin: auto;
-  margin-top: 10rpx;
+  width:90%;
+  
+  margin-top: 60rpx;
+  margin-left: 5%;
+  margin-right: 5%;
   background-color: #fff;
 }
 
