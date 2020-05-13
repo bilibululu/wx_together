@@ -36,7 +36,7 @@ Page({
                       if (res.confirm) {
                         console.log('用户点击确定')
                         wx.reLaunch({
-                          url: '../study/study',
+                          url: '../publish/publish',
                         })
                       } else if (res.cancel) {
                         console.log('用户点击取消')

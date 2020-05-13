@@ -51,7 +51,7 @@ Page({
       
         if(!res.data.error_code){
           wx.reLaunch({
-            url: '../study/study',
+            url: '../publish/publish',
           })
         }
         else{

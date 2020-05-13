@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/holes/holes",
+    
     "pages/index/index",
     "pages/study/study",
     "pages/register/register", 
@@ -31,7 +31,7 @@
         "selectedIconPath": "images/1.png"
       },
       {
-        "pagePath": "pages/entertain/entertain",
+        "pagePath": "pages/publish/publish",
         "text": "发表",
         "iconPath": "images/22.png",
         "selectedIconPath": "images/2.png"
