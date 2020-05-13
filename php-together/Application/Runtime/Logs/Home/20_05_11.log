@@ -1,0 +1,10 @@
+[ 2020-05-11T18:05:43+08:00 ] ::1 /together/index.php/Home/Deletemsg/delete_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005135s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0134s ]
+SQL: DELETE FROM `post` WHERE `message_id` = 5 [ RunTime:0.1802s ]
+

@@ -1,0 +1,266 @@
+[ 2020-05-07T19:09:13+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005256s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `post` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `post` SET `total_likes`='1' [ RunTime:0.0343s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 147 行.
+
+[ 2020-05-07T19:11:49+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003597s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 5 [ RunTime:0.0283s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 147 行.
+
+[ 2020-05-07T19:14:09+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 5 [ RunTime:0.0754s ]
+
+[ 2020-05-07T20:15:04+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 5 LIMIT 1   [ RunTime:0.0469s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 5 [ RunTime:0.0622s ]
+
+[ 2020-05-07T20:17:45+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 5 [ RunTime:0.0662s ]
+
+[ 2020-05-07T20:20:36+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.1019s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 148 行.
+
+[ 2020-05-07T20:23:17+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `post` SET `message_id`='4',`psn`='2018210445',`pname`='孙美意',`pface`='https://123.com',`ptext`='php太坑了',`pphoto`='http://tupian.com',`ptime`='1588777571',`total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.1027s ]
+
+[ 2020-05-07T20:24:36+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0781s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `post` SET `total_likes`='2' WHERE `message_id` = 4 [ RunTime:0.0637s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 148 行.
+
+[ 2020-05-07T20:29:11+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.0712s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:30:14+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0667s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.0572s ]
+
+[ 2020-05-07T20:30:19+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.0592s ]
+
+[ 2020-05-07T20:33:00+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.0725s ]
+
+[ 2020-05-07T20:36:44+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.0670s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:36:51+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 4 [ RunTime:0.0471s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:37:03+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `post` SET `message_id`='6',`psn`='2018210448',`pname`='李丰余',`pface`='https://123.com',`ptext`='php太坑了',`pphoto`='http://tupian.com',`ptime`='1588777625',`total_likes`='0' WHERE `message_id` = 6 [ RunTime:0.0477s ]
+
+[ 2020-05-07T20:40:05+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `message_id`='6',`psn`='2018210448',`pname`='李丰余',`pface`='https://123.com',`ptext`='php太坑了',`pphoto`='http://tupian.com',`ptime`='1588777625',`total_likes`='0' WHERE `message_id` = 6 [ RunTime:0.0744s ]
+
+[ 2020-05-07T20:40:06+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `post` SET `message_id`='6',`psn`='2018210448',`pname`='李丰余',`pface`='https://123.com',`ptext`='php太坑了',`pphoto`='http://tupian.com',`ptime`='1588777625',`total_likes`='0' WHERE `message_id` = 6 [ RunTime:0.0470s ]
+
+[ 2020-05-07T20:40:31+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `post` SET `total_likes`='1' WHERE `message_id` = 6 [ RunTime:0.0576s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:40:33+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `post` SET `total_likes`='2' WHERE `message_id` = 6 [ RunTime:0.0605s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:40:35+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `post` SET `total_likes`='3' WHERE `message_id` = 6 [ RunTime:0.0448s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:40:35+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `post` SET `total_likes`='4' WHERE `message_id` = 6 [ RunTime:0.0331s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:40:36+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0336s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `post` SET `total_likes`='5' WHERE `message_id` = 6 [ RunTime:0.0367s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+
+[ 2020-05-07T20:40:37+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `post` WHERE `message_id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `post` SET `total_likes`='6' WHERE `message_id` = 6 [ RunTime:0.0615s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 151 行.
+

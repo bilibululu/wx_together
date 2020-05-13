@@ -1,0 +1,38 @@
+[ 2020-04-22T22:58:25+08:00 ] ::1 /together/index.php/Home/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010723s ]
+
+[ 2020-04-22T23:00:33+08:00 ] ::1 /together/index.php/Home/IdentityVeri/IdCompare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+ERR: 无法加载控制器:IdentityVeri
+
+[ 2020-04-22T23:03:55+08:00 ] ::1 /together/index.php/Home/Identityveri/IdCompare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002062s ]
+ERR: 无法加载控制器:Identityveri
+
+[ 2020-04-22T23:03:57+08:00 ] ::1 /together/index.php/Home/Identityveri/IdCompare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+ERR: 无法加载控制器:Identityveri
+

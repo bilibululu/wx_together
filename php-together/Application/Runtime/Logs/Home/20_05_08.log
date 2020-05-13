@@ -1,0 +1,141 @@
+[ 2020-05-08T19:25:23+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030236s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0963s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`parea`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','php太坑了','http://tupian.com','1','1588937123') [ RunTime:0.0942s ]
+
+[ 2020-05-08T19:27:13+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0519s ]
+ERR: Method name must be a string
+
+[ 2020-05-08T19:30:14+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0805s ]
+SQL: SELECT * FROM `post` WHERE `parea` = 1 ORDER BY ptime desc  [ RunTime:0.0474s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+
+[ 2020-05-08T19:30:47+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `post` WHERE `parea` = 1 ORDER BY ptime desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+
+[ 2020-05-08T19:30:49+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.1107s ]
+SQL: SELECT * FROM `post` WHERE `parea` = 1 ORDER BY ptime desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+
+[ 2020-05-08T19:31:25+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `post` WHERE `parea` = 1 ORDER BY ptime desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+
+[ 2020-05-08T19:33:34+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `post` WHERE `parea` = 0 ORDER BY ptime desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 37 行.
+
+[ 2020-05-08T19:38:06+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.7645s ]
+SQL: SELECT * FROM `post` ORDER BY message_id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+
+[ 2020-05-08T19:38:24+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `post` ORDER BY message_id  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+
+[ 2020-05-08T19:40:26+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0933s ]
+SQL: SELECT * FROM `post` ORDER BY message_id  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 62 行.
+
+[ 2020-05-08T19:46:47+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0835s ]
+SQL: SELECT * FROM `post` ORDER BY message_id  [ RunTime:0.0003s ]
+

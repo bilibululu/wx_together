@@ -1,0 +1,390 @@
+[ 2020-05-06T19:26:53+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.048997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049028s ]
+
+[ 2020-05-06T19:29:07+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.3488s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','今天实在太倒霉了','http://tupian.com','1588764546') [ RunTime:0.1463s ]
+
+[ 2020-05-06T19:36:57+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0115s ]
+NOTIC: [2] time() expects exactly 0 parameters, 1 given D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 71 行.
+ERR: 1048:Column 'ptime' cannot be null
+ [ SQL语句 ] : INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','https://123.com','今天实在太倒霉了','http://tupian.com',NULL)
+ERR: 1048:Column 'ptime' cannot be null
+ [ SQL语句 ] : INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','https://123.com','今天实在太倒霉了','http://tupian.com',NULL)
+
+[ 2020-05-06T19:37:57+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0821s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','https://123.com','今天实在太倒霉了','http://tupian.com','1588765077') [ RunTime:0.0417s ]
+
+[ 2020-05-06T19:40:56+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038282s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0084s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','https://123.com','今天实在太倒霉了','http://tupian.com','1588765256') [ RunTime:0.0629s ]
+
+[ 2020-05-06T21:36:50+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002689s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.4841s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `post` ORDER BY id desc 
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `post` ORDER BY id desc 
+
+[ 2020-05-06T21:41:25+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004486s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0337s ]
+ERR: 1054:Unknown column 'vsn' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `post` ORDER BY vsn 
+ERR: 1054:Unknown column 'vsn' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `post` ORDER BY vsn 
+
+[ 2020-05-06T21:41:28+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.1075s ]
+ERR: 1054:Unknown column 'vsn' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `post` ORDER BY vsn 
+ERR: 1054:Unknown column 'vsn' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `post` ORDER BY vsn 
+
+[ 2020-05-06T21:45:10+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `post` ORDER BY psn  [ RunTime:0.0626s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+
+[ 2020-05-06T21:53:23+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0622s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','今天好开心','http://tupian.com','1588773202') [ RunTime:0.3452s ]
+
+[ 2020-05-06T22:10:35+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0093s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','今天好开心','http://tupian.com','1588774235') [ RunTime:0.0501s ]
+
+[ 2020-05-06T22:12:36+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0513s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','今天好开心','http://tupian.com','1588774356') [ RunTime:0.0689s ]
+
+[ 2020-05-06T22:13:57+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0087s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','今天好开心','http://tupian.com','1588774436') [ RunTime:0.0385s ]
+
+[ 2020-05-06T22:18:17+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0511s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','王嘉琦','https://123.com','php太坑了','http://tupian.com','1588774697') [ RunTime:0.0578s ]
+
+[ 2020-05-06T22:18:57+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `post` ORDER BY ptime  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+
+[ 2020-05-06T22:25:58+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0098s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','王嘉琦','https://123.com','php太坑了','http://tupian.com','1588775158') [ RunTime:0.0783s ]
+
+[ 2020-05-06T22:34:45+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0177s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','王嘉琦','https://123.com','php太坑了','http://tupian.com','1588775685') [ RunTime:0.0438s ]
+
+[ 2020-05-06T22:35:15+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0351s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','https://123.com','php太坑了','http://tupian.com','1588775715') [ RunTime:0.0502s ]
+
+[ 2020-05-06T22:35:50+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0413s ]
+ERR: 1062:Duplicate entry '2018210444' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','赵雪莹','https://123.com','php太坑了','http://tupian.com','1588775750')
+ERR: 1062:Duplicate entry '2018210444' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','赵雪莹','https://123.com','php太坑了','http://tupian.com','1588775750')
+
+[ 2020-05-06T22:36:37+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0551s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','php太坑了','http://tupian.com','1588775797') [ RunTime:0.0513s ]
+
+[ 2020-05-06T22:37:33+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0467s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210443','赵雪莹','https://123.com','php太坑了','http://tupian.com','1588775853') [ RunTime:0.0511s ]
+
+[ 2020-05-06T22:40:05+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0767s ]
+ERR: 1062:Duplicate entry '2018210443' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210443','盛开语文','https://123.com','php太坑了','http://tupian.com','1588776005')
+ERR: 1062:Duplicate entry '2018210443' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210443','盛开语文','https://123.com','php太坑了','http://tupian.com','1588776005')
+
+[ 2020-05-06T23:03:38+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0580s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','王嘉琦','https://123.com','php太坑了','http://tupian.com','1588777418') [ RunTime:0.0499s ]
+
+[ 2020-05-06T23:04:03+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0860s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','php太坑了','http://tupian.com','1588777443') [ RunTime:0.0604s ]
+
+[ 2020-05-06T23:05:00+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0133s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','php太坑了','http://tupian.com','1588777500') [ RunTime:0.0378s ]
+
+[ 2020-05-06T23:06:11+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0131s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210445','孙美意','https://123.com','php太坑了','http://tupian.com','1588777571') [ RunTime:0.0392s ]
+
+[ 2020-05-06T23:06:35+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0158s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210444','王嘉琦','https://123.com','php太坑了','http://tupian.com','1588777595') [ RunTime:0.0500s ]
+
+[ 2020-05-06T23:07:05+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0186s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210448','李丰余','https://123.com','php太坑了','http://tupian.com','1588777625') [ RunTime:0.0919s ]
+
+[ 2020-05-06T23:07:58+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `post` ORDER BY message_id  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+
+[ 2020-05-06T23:13:29+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0457s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210443','生凯悦','https://123.com','php太坑了','http://tupian.com','1588778009') [ RunTime:0.0606s ]
+
+[ 2020-05-06T23:13:37+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0200s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210443','生凯悦','https://123.com','php太坑了','http://tupian.com','1588778017') [ RunTime:0.0411s ]
+
+[ 2020-05-06T23:15:22+08:00 ] ::1 /together/index.php/Home/Getmsg/get_all_messages
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `post` ORDER BY message_id  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+NOTIC: [8] Undefined index: send_timestamp D:\xampp\htdocs\together\Application\Home\Controller\GetmsgController.class.php 第 24 行.
+
+[ 2020-05-06T23:20:37+08:00 ] ::1 /together/index.php/Home/Message/publish_new_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0207s ]
+SQL: INSERT INTO `post` (`psn`,`pname`,`pface`,`ptext`,`pphoto`,`ptime`) VALUES ('2018210442','赵雪莹','https://123.com','php太坑了','http://tupian.com','1588778436') [ RunTime:0.0646s ]
+
+[ 2020-05-06T23:29:55+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+ERR: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+
+[ 2020-05-06T23:30:55+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.4636s ]
+SQL: SELECT * FROM `post` LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `post` SET `total_likes`='0' [ RunTime:0.0564s ]
+
+[ 2020-05-06T23:33:13+08:00 ] ::1 /together/index.php/Home/Message/do_like
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `post` LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `post` SET `total_likes`='1' [ RunTime:0.0494s ]
+NOTIC: [8] Undefined index: total_likes D:\xampp\htdocs\together\Application\Home\Controller\MessageController.class.php 第 147 行.
+

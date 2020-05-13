@@ -1,0 +1,174 @@
+[ 2020-05-02T13:28:28+08:00 ] ::1 /together/index.php/Home/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014093s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0258s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE `vsn` = 2018210448 [ RunTime:0.0393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002961s ]
+
+[ 2020-05-02T13:30:06+08:00 ] ::1 /together/index.php/Home/Idveri/idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002555s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210448 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-05-02T13:30:48+08:00 ] ::1 /together/index.php/Home/Idveri/idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-05-02T13:33:11+08:00 ] ::1 /together/index.php/Home/Idveri/idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001847s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0301s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-05-02T13:36:13+08:00 ] ::1 /together/index.php/Home/Idveri/idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-05-02T13:41:14+08:00 ] ::1 /together/index.php/Home/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+ERR: 非法操作:index
+
+[ 2020-05-02T13:42:15+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri+test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+ERR: 非法操作:Idveri+test
+
+[ 2020-05-02T13:45:40+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0562s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE ( vsn=2018210445 ) [ RunTime:0.0407s ]
+
+[ 2020-05-02T13:48:34+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001992s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-05-02T13:48:47+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012601s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE ( vsn=2018210445 ) [ RunTime:0.0818s ]
+
+[ 2020-05-02T13:49:15+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE ( vsn=2018210445 ) [ RunTime:0.0536s ]
+
+[ 2020-05-02T13:52:00+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+NOTIC: [8] Undefined index: StudentId D:\xampp\htdocs\together\Application\Home\Controller\IdveriController.class.php 第 9 行.
+
+[ 2020-05-02T13:52:19+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+NOTIC: [8] Undefined index: StudentId D:\xampp\htdocs\together\Application\Home\Controller\IdveriController.class.php 第 9 行.
+
+[ 2020-05-02T13:52:40+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+NOTIC: [8] Undefined index: StudentId D:\xampp\htdocs\together\Application\Home\Controller\IdveriController.class.php 第 9 行.
+
+[ 2020-05-02T13:59:40+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0642s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210444 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE ( vsn=2018210444 ) [ RunTime:0.0426s ]
+
+[ 2020-05-02T13:59:58+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0595s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210445 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE ( vsn=2018210445 ) [ RunTime:0.0454s ]
+
+[ 2020-05-02T14:00:12+08:00 ] ::1 /together/index.php/Home/Idveri/Idveri
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002332s ]
+SQL: SHOW COLUMNS FROM `verified` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `verified` WHERE ( vsn=2018210448 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `verified` SET `vbool`='1' WHERE ( vsn=2018210448 ) [ RunTime:0.0905s ]
+
