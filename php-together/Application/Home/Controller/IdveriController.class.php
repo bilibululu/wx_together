@@ -30,22 +30,15 @@ class IdveriController extends BaseController //实名认证+存储用户信息�
             $return_data['msg'] = '信息不足:openid';
             $this->ajaxReturn($return_data);
         }
-        if (!$_POST['nickname']) { //校验参数是否存在
-            $return_data = array();
-            $return_data['error_code'] = 5;
-            $return_data['msg'] = '信息不足:昵称';
-            $this->ajaxReturn($return_data);
-        }
-
-
-
-
+        
+        
+        
         //设置查询条件
         $pvsn=$_POST['sId']; //输入的学号
         $pname=$_POST['name'];     //输入的姓名
         $pcontact=$_POST['contact']; //输入的联系方式
         $popenid=$_POST['openid'];     //输入的openid
-        $pnickname=$_POST['nickname'];     //输入的昵称
+      
         //开始实名认证比较
         //以学号在verified表中查询数据并比较
         $verified=M('verified');//实例化数据表
@@ -62,7 +55,6 @@ class IdveriController extends BaseController //实名认证+存储用户信息�
                 $certi=array(); //存储信息
                 $certi['vwxoqq']=$pcontact;
                 $certi['vopenid']=$popenid;
-                $certi['vnickname']=$pnickname;
                 $certi['vbool']=1;
                 $result=$verified->where("vsn=$pvsn")->save($certi);
 //                $result['vnickname']=$verified->where("vsn=$pvsn")->save($pnickname);
@@ -76,14 +68,14 @@ class IdveriController extends BaseController //实名认证+存储用户信息�
             }
             else{
                 $return_data = array();
-                $return_data['error_code'] = 6;
+                $return_data['error_code'] = 5;
                 $return_data['msg'] = '实名认证失败！请输入真实信息！';
                 $this->ajaxReturn($return_data);
             }
         }
         else{
             $return_data = array();
-            $return_data['error_code'] = 6;
+            $return_data['error_code'] = 5;
             $return_data['msg'] = '实名认证失败！请输入真实信息！';
             $this->ajaxReturn($return_data);
         }
