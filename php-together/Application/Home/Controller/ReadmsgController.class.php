@@ -37,10 +37,35 @@ class ReadmsgController extends BaseController {
         $this->ajaxReturn($return_data);
 
         //dump($all_messages);
+ }
+
+    public function getVsn(){
+            $Message=M('verified');
+            $vopenid=$_POST['vopenid'];
+            $where=array();
+            $where['vopenid']=$vopenid;
+            // $result = $Message->where("vopenid=$vopenid")->field('vsn')->find();
+            $result = $Message->where($where)->find();
+            $vsn1=$result["vsn"];
+            $vsn=intval($vsn1);
+            if($result){
+                //dump($vsn);
+                $return_data=array();
+                $return_data['error_code'] = 0;
+                $return_data['msg'] = '获取成功';
+                $return_data['sId']=$vsn;
+
+                $this->ajaxReturn($return_data);
+            }
+            else{
+                $return_data=array();
+                $return_data['error_code'] = 2;
+                $return_data['msg'] = '获取失败';
+
+                $this->ajaxReturn($return_data);
+            }
 
 
-    }
-
-
+        }
 
 }
