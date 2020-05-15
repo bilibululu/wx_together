@@ -38,8 +38,7 @@ Page({
         name: that.data.sname,
         sId:that.data.student,
         contact: that.data.number,
-        openid: app.globalData.id,
-        nickname: app.globalData.info.nickname
+        openid: app.globalData.id
       },
       method: 'POST',
       header: {

@@ -1,15 +1,47 @@
 <!--holes.wxml-->
+<form bindsubmit="formSubmit" id='2' bindreset="formReset">  
+<view class='label'>
+  <button class="label1" bindtap="label1" font-size="10rpx">学习</button>
+  <button class="label2" bindtap="label2" font-size="10rpx">运动</button>
+  <button class="label3" bindtap="label3" font-size="10rpx">娱乐</button>
+  <button class="label4" bindtap="label4" font-size="10rpx">日常</button>
+</view>
 
 <view class="textarea">
   <textarea class="textinput" placeholder-style="color:#888888;font-size:34rpx" placeholder="在这里输入动态哦~最多为200字" maxlength="100" bindinput="bindTextAreaBlur"></textarea>
 </view>
-<!-- <view class='labela'>
-  <button class="label1" bindtap="label1" font-size="10rpx">学习</button>
-  <button class="label2" bindtap="label2" font-size="10rpx">运动</button>
+
+<view class="weui-cell"> 
+  <view class="weui-cell__bd"> 
+    <view class="weui-uploader"> 
+
+      <view class="weui-uploader__hd"> 
+        <view class="weui-uploader__title">点击下方上传图片</view> 
+      </view> 
+      
+      <view class="weui-uploader__bd"> 
+        <!-- 图片上传点击此处 -->
+        <view class="weui-uploader__input-box"> 
+          <view class="weui-uploader__input" bindtap="chooseImage"></view> 
+        </view> 
+
+        <view class="weui-uploader__files"> 
+          <block wx:for="{{imageList}}" wx:for-item="image" wx:key="stably"> 
+
+            <view class="weui-uploader__file"> 
+              <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image> 
+            </view> 
+
+          </block> 
+        </view> 
+
+      </view> 
+    </view> 
+  </view> 
 </view>
-<view class='labelb'>
-  <button class="label3" bindtap="label3" font-size="10rpx">娱乐</button>
-  <button class="label4" bindtap="label4" font-size="10rpx">日常</button>
-</view> -->
+
+
+
 <button id='btn' class='btn' bindtap="send" style="primary">发送</button>
+</form> 
    

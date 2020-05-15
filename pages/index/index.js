@@ -11,7 +11,7 @@ Page({
     console.log(app.globalData.info)
     if(that.data.isDirect){
       wx.reLaunch({
-        url: '../study/study'
+        url: '../show/show'
       })
     }
     else {

@@ -1,0 +1,30 @@
+page {
+  background-color: #efefef;
+}
+
+.scr {
+  background-color: #efefef;
+  width: 100%;
+  height: 91%;
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  position: absolute;
+}
+
+.btnapply {
+  width: 30%;
+  height: 80rpx;
+  background-color: rgb(48, 133, 126);
+  color: white;
+  border-radius: 98rpx;
+  left: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  width:80%
+}
