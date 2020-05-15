@@ -13,18 +13,35 @@ page {
 }
 
 .btnapply {
-  width: 30%;
-  height: 80rpx;
-  background-color: rgb(48, 133, 126);
-  color: white;
+  font-size: 35rpx;
+margin-right: 15rpx;
+color: white;
+background-color: #5cbcaf;
   border-radius: 98rpx;
-  left: 30%;
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.img{
-  width:80%
+.block {
+  margin: 15rpx;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.al_apply {
+  font-size: 30rpx;
+  color: #5cbcaf;
+  height: 32rpx;
+  margin-left: 15rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
 }

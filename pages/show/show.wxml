@@ -1,28 +1,28 @@
 <scroll-view class="src" scroll-y='true'>
   <block wx:for="{{toshow}}" wx:for-item="invitor" wx:for-index="id">
-  <view class="cu-card dynamic">
-    <view class="cu-item shadow">
-      <view class="cu-list menu-avatar">
-        <view class="cu-item">
-          <view class="cu-avatar round lg" style="background-image:url({{invitor.pheadport}});"></view>
-          <view class="content flex-sub">
-            <view class="padding">{{invitor.pnickname}}</view>
-            <view class="text-gray text-sm flex justify-between">
-             {{invitor.ptime}}
+    <view class="cu-card dynamic">
+      <view class="cu-item shadow">
+        <view class="cu-list menu-avatar">
+          <view class="cu-item">
+            <view class="cu-avatar round lg" style="background-image:url({{invitor.pheadport}});"></view>
+            <view class="content flex-sub">
+              <view class="padding">{{invitor.pnickname}}</view>
+              <view class="text-gray text-sm flex justify-between">
+                {{invitor.ptime}}
+              </view>
             </view>
           </view>
         </view>
-      </view>
-      <view class="text-content">
-        {{invitor.ptext}}
-      </view>
-      
-      
-      <view class="text-gray text-sm text-right padding">
-        <button class="btnapply" aria-disabled="false">申请</button>
-      </view>
+        <view class="text-content">
+          {{invitor.ptext}}
+        </view>
 
+
+        <view class="block">
+          <text class="al_apply">{{invitor.total_request}}人已申请</text>
+          <button class="btnapply">申请</button>
+        </view>
+      </view>
     </view>
-  </view>
-</block>
+  </block>
 </scroll-view>
