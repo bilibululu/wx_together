@@ -1,0 +1,4 @@
+php后台部分：
+该部分由孙美意和王嘉琦共同开发，采用thinkphp框架编写控制器，尚在开发中，函数可能会更新。
+孙美意负责搭建服务器，debug修改代码，编写控制器Controller中的一部分函数：getOpenid,ifOpendi,idVeri,fduserMsg
+王嘉琦负责编写控制器Controller中的另一部分函数: storeMsg,showMsg,deleteMsg,getVsn

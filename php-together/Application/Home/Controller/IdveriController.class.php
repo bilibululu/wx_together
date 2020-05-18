@@ -31,14 +31,23 @@ class IdveriController extends BaseController //实名认证接口
             $this->ajaxReturn($return_data);
         }
         
+<<<<<<< HEAD
    
 
+=======
+        
+        
+>>>>>>> 1d1607e36392d2c0eb4fc649af8dce65d9b520f6
         //设置查询条件
         $pvsn=$_POST['sId']; //输入的学号
         $pname=$_POST['name'];     //输入的姓名
         $pcontact=$_POST['contact']; //输入的联系方式
         $popenid=$_POST['openid'];     //输入的openid
+<<<<<<< HEAD
    
+=======
+      
+>>>>>>> 1d1607e36392d2c0eb4fc649af8dce65d9b520f6
         //开始实名认证比较
         //以学号在verified表中查询数据并比较
         $verified=M('verified');//实例化数据表
