@@ -5,8 +5,8 @@ page{
 
 .btn {
   width: 80%;
-  height: 130rpx;
-  margin-top: 60rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
   background-color:rgb(48, 133, 126);
   color: white;
   border-radius: 98rpx;
@@ -25,7 +25,7 @@ page{
 .textarea{
   width:90%;
   
-  margin-top: 30rpx;
+  margin-top: 10rpx;
   margin-left: 5%;
   margin-right: 5%;
   background-color: #fff;
@@ -33,7 +33,7 @@ page{
 
 .textinput{
   width:96%;
-  height:300rpx;
+  height:500rpx;
   margin-left: 2%;
   margin-right: 2%;
   padding-top: 20rpx;
@@ -46,11 +46,27 @@ page{
 }
 .label{
   display: flex;
-  margin-top: 20rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 20rpx;
 }
-/* .uploaderpicture{
-  margin-left: 10rpx;
+.label1::after{
+  border: none;
 }
-.weui-uploader__title{
-  margin:auto;
-} */
+.label2::after{
+  border: none;
+}
+.label3::after{
+  border: none;
+}
+.label4::after{
+  border: none;
+}
+.warm{
+  background-color: rgb(197, 237, 223);
+}
+.content{
+  font-size: 30rpx;
+  margin-left: 60rpx;
+}

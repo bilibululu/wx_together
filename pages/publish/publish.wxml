@@ -1,17 +1,18 @@
 <!--holes.wxml-->
+<view class="warm"><view class="content">请在发布动态前，先点击下方选择标签哦(*╹▽╹*)~</view></view>
 <form bindsubmit="formSubmit" id='2' bindreset="formReset">  
 <view class='label'>
-  <button class="label1" bindtap="label1" font-size="10rpx">学习</button>
-  <button class="label2" bindtap="label2" font-size="10rpx">运动</button>
-  <button class="label3" bindtap="label3" font-size="10rpx">娱乐</button>
-  <button class="label4" bindtap="label4" font-size="10rpx">日常</button>
+  <button class="label1" catchtap="label1" font-size="10rpx" style="font-size:11pt;background-color:{{score1}}">学习</button>
+  <button class="label2" catchtap="label2" font-size="10rpx" style="font-size:11pt;background-color:{{score2}}">运动</button>
+  <button class="label3" catchtap="label3" font-size="10rpx" style="font-size:11pt;background-color:{{score3}}">娱乐</button>
+  <button class="label4" catchtap="label4" font-size="10rpx" style="font-size:11pt;background-color:{{score4}}">日常</button>
 </view>
 
 <view class="textarea">
   <textarea class="textinput" placeholder-style="color:#888888;font-size:34rpx" placeholder="在这里输入动态哦~最多为200字" maxlength="100" bindinput="bindTextAreaBlur"></textarea>
 </view>
-
-<view class="weui-cell"> 
+<!-- 图片上传 -->
+<!-- <view class="weui-cell"> 
   <view class="weui-cell__bd"> 
     <view class="weui-uploader"> 
 
@@ -19,9 +20,9 @@
         <view class="weui-uploader__title">点击下方上传图片</view> 
       </view> 
       
-      <view class="weui-uploader__bd"> 
+      <view class="weui-uploader__bd">  -->
         <!-- 图片上传点击此处 -->
-        <view class="weui-uploader__input-box"> 
+        <!-- <view class="weui-uploader__input-box"> 
           <view class="weui-uploader__input" bindtap="chooseImage"></view> 
         </view> 
 
@@ -38,7 +39,7 @@
       </view> 
     </view> 
   </view> 
-</view>
+</view> -->
 
 
 

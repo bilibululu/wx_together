@@ -6,7 +6,8 @@ Page({
     circular: true,
     scrollTop: '', //滑动的距离
     navFixed: false, //导航是否固定
-    currentData: 1
+    currentData: 1,
+    btn_content:'申请'
   },
 
 
@@ -156,5 +157,31 @@ Page({
 
   },
 
-
+apply:function(){
+  var that=this;
+  wx.showLoading({
+    title: '申请组队中',
+  })
+  wx.request({
+    url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
+    data: {
+     openid:app.globalData.id
+    },
+    header: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    method: 'POST',
+    success: function (res) {
+     wx.hideLoading()
+     
+    },
+    fail: function () {
+      wx.showToast({
+        title: '申请失败',
+        icon: 'none',
+        duration: 2000
+      })
+    }
+  })
+}
 })

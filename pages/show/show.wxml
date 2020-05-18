@@ -49,7 +49,7 @@
 
         <view class="block">
           <text class="al_apply">{{invitor.total_request}}人已申请</text>
-          <button class="btnapply">申请</button>
+          <button class="btnapply" bindtap="apply">{{btn_content}}</button>
         </view>
       </view>
     </view>

@@ -8,13 +8,147 @@ Page({
     labelarray:[1,2,3,4],//标签
     index:-1,
     label:0,
-    productInfo:""
+    // productInfo:""
+    score1:'#f7f7f7',
+    score2:'#f7f7f7',
+    score3:'#f7f7f7',
+    score4:'#f7f7f7',
+    a:0
   },
-
   //label传递函数
   label1:function(){
-    this.setData({label:this.data.labelarray[this.data.index+1]})
+    
     var that=this//保存this
+    that.setData({
+      a:1
+    })
+    if(that.data.a==1|that.data.a==0){
+      that.setData({
+        score1: 'rgb(197, 237, 223)',
+        score2:'#f7f7f7',
+        score3:'#f7f7f7',
+        score4:'#f7f7f7'
+      })
+    }else{
+      that.setData({
+        score1:'#f7f7f7'
+      })
+    }
+    this.setData({label:this.data.labelarray[this.data.index+1]})
+    console.log(that.data.label)
+    console.log('onLoad')
+      wx.request({
+        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        data: {vopenid:getApp().globalData.id},
+        header: {
+          'content-type': 'application/x-www-form-urlencoded' 
+        },
+        method:"POST",
+        success: function (res) {
+          console.log(res.data)
+          app.globalData.Industry=res.data.sId
+          console.log(app.globalData.Industry)
+        },
+        fail: function (err) {
+          console.log(err)
+        }
+      })
+  },
+  
+  label2:function(){
+    var that=this//保存this
+    that.setData({
+      a:2
+      })
+    if(that.data.a==2|that.data.a==0){
+      that.setData({
+        score2: 'rgb(197, 237, 223)',
+        score1:'#f7f7f7',
+        score3:'#f7f7f7',
+        score4:'#f7f7f7'
+      })
+    }else{
+      that.setData({
+        score2:'#f7f7f7'
+      })
+    }
+    
+    this.setData({label:this.data.labelarray[this.data.index+2]})
+    console.log(that.data.label)
+    console.log('onLoad')
+      wx.request({
+        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        data: {vopenid:getApp().globalData.id},
+        header: {
+          'content-type': 'application/x-www-form-urlencoded' 
+        },
+        method:"POST",
+        success: function (res) {
+   
+          console.log(res.data)
+          app.globalData.Industry=res.data.sId 
+        },
+        fail: function (err) {
+          console.log(err)
+        }
+      })
+  },
+  label3:function(){
+    this.setData({label:this.data.labelarray[this.data.index+3]})
+    var that=this//保存this
+    that.setData({
+      a:3
+    })
+    if(that.data.a==3|that.data.a==0){
+      that.setData({
+        score3: 'rgb(197, 237, 223)',
+        score2:'#f7f7f7',
+        score1:'#f7f7f7',
+        score4:'#f7f7f7'
+      })
+    }else{
+      that.setData({
+        score3:'#f7f7f7'
+      })
+    }
+   
+    console.log(that.data.label)
+    console.log('onLoad')
+      wx.request({
+        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        data: {vopenid:getApp().globalData.id},
+        header: {
+          'content-type': 'application/x-www-form-urlencoded' 
+        },
+        method:"POST",
+        success: function (res) {
+          console.log(res.data)
+          app.globalData.Industry=res.data.sId 
+        },
+        fail: function (err) {
+          console.log(err)
+        }
+      })
+  },
+  label4:function(){
+    this.setData({label:this.data.labelarray[this.data.index+4]})
+    var that=this//保存this
+    that.setData({
+      a:4
+    })
+    if(that.data.a==4|that.data.a==0){
+      that.setData({
+        score4: 'rgb(197, 237, 223)',
+        score2:'#f7f7f7',
+        score3:'#f7f7f7',
+        score1:'#f7f7f7'
+      })
+    }else{
+      that.setData({
+        score4:'#f7f7f7'
+      })
+    }
+    
     console.log(that.data.label)
     console.log('onLoad')
       wx.request({
@@ -28,92 +162,6 @@ Page({
    
           console.log(res.data)
           app.globalData.Industry=res.data.sId
-          console.log(app.globalData.Industry)
-          // that.data.Industry=res.data //数据库返回的学号
-  //         that.setData({  
-  //          Industry: res.data.pvsn //数据库返回的学号
-  //         })  
-        },
-        fail: function (err) {
-          console.log(err)
-        }
-      })
-  },
-  
-  label2:function(){
-    this.setData({label:this.data.labelarray[this.data.index+2]})
-    var that=this//保存this
-    console.log(that.data.label)
-    console.log('onLoad')
-      wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
-        data: {vopenid:getApp().globalData.id},
-        header: {
-          'content-type': 'application/x-www-form-urlencoded' 
-        },
-        method:"POST",
-        success: function (res) {
-   
-          console.log(res.data)
-  app.globalData.Industry=res.data.sId
-          // that.data.Industry=res.data //数据库返回的学号
-  //         that.setData({  
-  //          Industry: res.data.pvsn //数据库返回的学号
-  //         })  
-        },
-        fail: function (err) {
-          console.log(err)
-        }
-      })
-  },
-  label3:function(){
-    this.setData({label:this.data.labelarray[this.data.index+3]})
-    var that=this//保存this
-    console.log(that.data.label)
-    console.log('onLoad')
-      wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
-        data: {vopenid:getApp().globalData.id},
-        header: {
-          'content-type': 'application/x-www-form-urlencoded' 
-        },
-        method:"POST",
-        success: function (res) {
-   
-          console.log(res.data)
-  app.globalData.Industry=res.data.sId
-          // that.data.Industry=res.data
-          // getApp().globalData.Industry=res.data //数据库返回的学号
-  //         that.setData({  
-  //          Industry: res.data.pvsn //数据库返回的学号
-  //         })  
-        },
-        fail: function (err) {
-          console.log(err)
-        }
-      })
-  },
-  label4:function(){
-    this.setData({label:this.data.labelarray[this.data.index+4]})
-    var that=this//保存this
-    console.log(that.data.label)
-    console.log('onLoad')
-      wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
-        data: {vopenid:getApp().globalData.id},
-        header: {
-          'content-type': 'application/x-www-form-urlencoded' 
-        },
-        method:"POST",
-        success: function (res) {
-   
-          console.log(res.data)
-  app.globalData.Industry=res.data.sId
-          // that.data.Industry=res.data
-          // getApp().globalData.Industry=res.data //数据库返回的学号
-  //         that.setData({  
-  //          Industry: res.data.pvsn //数据库返回的学号
-  //         })  
         },
         fail: function (err) {
           console.log(err)
@@ -123,116 +171,90 @@ Page({
 
   //text传递函数
   bindTextAreaBlur: function (e) {
-    // console.log(e.detail.value)
     this.data.detail = e.detail.value
-    //console.log(this.data.value)
   },
   
 //图片上传
+// chooseImage: function () {
+//   var that = this;
+//   let maxSize = 1024 * 1024 * 5;//5M大小的图片
+//   let maxLength = 1;
+//   let flag = true;
+//   //选择图片部分
+//   wx.chooseImage({
+//     count: 1, //最多可以选择的图片总数
+//     sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+//     sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
 
-chooseImage: function () {
-  var that = this;
-  let maxSize = 1024 * 1024 * 5;//5M大小的图片
-  let maxLength = 1;
-  let flag = true;
-  //选择图片部分
-  wx.chooseImage({
-    count: 1, //最多可以选择的图片总数
-    sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-    sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-
-    success: function (res) {
-      //返回选定照片的本地文件路径列表，tenpFilePaths可以作为img标签的src属性显示图片
-      var temlFilePaths = res.tempFilePaths
-      //启动上传等待中
-      wx.showToast({
-        title: '正在上传...',
-        icon: 'loading',
-        mask: true,
-        duration: 500//延迟时间
-      })
-      // var uploadImgCournt=0
+//     success: function (res) {
+//       //返回选定照片的本地文件路径列表，tenpFilePaths可以作为img标签的src属性显示图片
+//       var temlFilePaths = res.tempFilePaths
+//       //启动上传等待中
+//       wx.showToast({
+//         title: '正在上传...',
+//         icon: 'loading',
+//         mask: true,
+//         duration: 500//延迟时间
+//       })
+//       // var uploadImgCournt=0
       
-      for (let i = 0; i < res.tempFiles.length; i++) {
-        //图片大小是否超标
-        if (res.tempFiles[i].size > maxSize) {
-          flag = false;
-          console.log(111)
-          wx.showModal({//显示模拟对话框
-            content: '图片太大，不允许上传',
-            showCancel: false,
-            success: function (res) {
-              if (res.confirm) {
-                console.log('用户点击确定')
-              }
-            }
-          });
-        }
-      }
-      //图片张数是否超标
-      if (res.tempFiles.length > maxLength) {
-        console.log('222');
-        wx.showModal({
-          content: '最多能上传' + maxLength + '张图片',
-          showCancel: false,
-          success: function (res) {
-            if (res.confirm) {
-              console.log('确定');
-            }
-          }
-        })
-      }
-      //如果上述条件都满足就更新productInfo
-      if (flag == true && res.tempFiles.length <= maxLength) {
-        that.setData({
-          // imageList: res.tempFilePaths
-          imageList: temlFilePaths
-        })
-        // console.log(res.tempFilePaths)
-      }
+//       for (let i = 0; i < res.tempFiles.length; i++) {
+//         //图片大小是否超标
+//         if (res.tempFiles[i].size > maxSize) {
+//           flag = false;
+//           console.log(111)
+//           wx.showModal({//显示模拟对话框
+//             content: '图片太大，不允许上传',
+//             showCancel: false,
+//             success: function (res) {
+//               if (res.confirm) {
+//                 console.log('用户点击确定')
+//               }
+//             }
+//           });
+//         }
+//       }
+//       //图片张数是否超标
+//       if (res.tempFiles.length > maxLength) {
+//         console.log('222');
+//         wx.showModal({
+//           content: '最多能上传' + maxLength + '张图片',
+//           showCancel: false,
+//           success: function (res) {
+//             if (res.confirm) {
+//               console.log('确定');
+//             }
+//           }
+//         })
+//       }
+//       //如果上述条件都满足就更新productInfo
+//       if (flag == true && res.tempFiles.length <= maxLength) {
+//         that.setData({
+//           // imageList: res.tempFilePaths
+//           imageList: temlFilePaths
+//         })
+//         // console.log(res.tempFilePaths)
+//       }
 
-      var productInfo=res.tempFilePaths[0]
-          console.log(productInfo)
-          that.setData({productInfo:productInfo})
-      // wx.uploadFile({
-      //   url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/storeMsg',//开发者服务器地址
-      //   filePath: res.tempFilePaths[0],//需要上传的照片的位置能自动转到相册图片的地址
-      //   name: 'pphoto',//key
-      //   header: {
-      //     "Content-Type": "multipart/form-data",
-      //     'Content-Type': 'application/json'
-      //   },//http请求header
-      //   //data是开发者服务器返回的数据
-      //   success:function(){
-      //     // var data=res.pphoto;
-      //     // var productInfo=data;//地址
-      //     var productInfo=res.tempFilePaths[0]
-      //     console.log(productInfo)
-      //     that.setData({"productInfo":productInfo})
-      //   },
-      //   success: function (data) {
-      //     console.log(that.data.imagesList);//在界面打印data
-      //   },
-      //   fail: function (data) {
-      //     console.log(that.data.imagesList);//打印data
-      //   }
-      // })
-      console.log(res);//打印res
-    },
-    fail: function (res) {
-      console.log(res);
-    }
-  })
-},
-previewImage: function (e) { 
-  var current = e.publish.dataset.src 
-  wx.previewImage({ 
-  current: current, 
-  urls: this.data.productInfo
-  }) 
-  console.log(current)
-  console.log(urls)
-},
+//       var productInfo=res.tempFilePaths[0]
+//           console.log(productInfo)
+//           that.setData({productInfo:productInfo})
+//       console.log(res);//打印res
+//     },
+//     fail: function (res) {
+//       console.log(res);
+//     }
+//   })
+// },
+// previewImage: function (e) { 
+//   var current = e.publish.dataset.src 
+//   wx.previewImage({ 
+//   current: current, 
+//   urls: this.data.productInfo
+//   }) 
+//   console.log(current)
+//   console.log(urls)
+// },
 
   //send按键
   send: function (e) {
@@ -255,7 +277,7 @@ previewImage: function (e) {
         Ptext: that.data.detail,
         Parea:that.data.label,
         // Pphoto:picture_ad,
-        Pphoto:that.data.productInfo,
+        // Pphoto:that.data.productInfo,
         Popenid:getApp().globalData.id
       },
       method: 'POST',
@@ -286,12 +308,13 @@ previewImage: function (e) {
             success(res) { },
             complete: function (res) {
               wx.reLaunch({
-                url: '../show/show',
+                url: '../study/study',
               })
             }
           })
         }
       },
+      
       fail: function (res) {
         wx.showLoading({
           title: '哎呀！',
@@ -306,7 +329,13 @@ previewImage: function (e) {
         })
       }
     })
-
+    that.setData({
+      a: 0,
+      score1: '#f7f7f7',
+      score2:'#f7f7f7',
+      score3:'#f7f7f7',
+      score4:'#f7f7f7'
+    })
     setTimeout(function () {
       wx.hideLoading()
     }, 2000)
