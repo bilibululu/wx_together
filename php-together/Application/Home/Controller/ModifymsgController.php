@@ -1,7 +1,6 @@
 <?php
-
-
 namespace Home\Controller;
+
 use Think\Controller;
 
 class ModifymsgController extends BaseController
@@ -9,7 +8,7 @@ class ModifymsgController extends BaseController
 
 
     /**
-     * 保存发布的新树洞
+     * 发布新树洞
      */
     public function storeMsg()
     {
@@ -22,6 +21,13 @@ class ModifymsgController extends BaseController
             $this->ajaxReturn($return_data);
         }
 
+        if (!$_POST['Pnickname']) {
+            $return_data = array();
+            $return_data['error_code'] = 1;
+            $return_data['msg'] = '参数不足:Pnickname';
+
+            $this->ajaxReturn($return_data);
+        }
 
         if (!$_POST['Pface']) {
             $return_data = array();
@@ -40,32 +46,34 @@ class ModifymsgController extends BaseController
             $this->ajaxReturn($return_data);
         }
 
-        if (!$_POST['Pphoto']) {
+       
+        if (!$_POST['Parea']) {
             $return_data = array();
             $return_data['error_code'] = 1;
-            $return_data['msg'] = '参数不足：Pphoto';
+            $return_data['msg'] = '参数不足：Parea';
+
+            $this->ajaxReturn($return_data);
+        }
+        
+        if (!$_POST['Popenid']) {
+            $return_data = array();
+            $return_data['error_code'] = 1;
+            $return_data['msg'] = '参数不足：Popenid';
 
             $this->ajaxReturn($return_data);
         }
 
-
-        if (!$_POST['Pquyu']) {
-            $return_data = array();
-            $return_data['error_code'] = 1;
-            $return_data['msg'] = '参数不足：Pquyu';
-
-            $this->ajaxReturn($return_data);
-        }
-
+        
         $Message = M('post');
         //设置表插入数据
         $data = array();
-        $data['psn'] = $_POST['Psn'];
-        $data['pface'] = $_POST['Pface'];
+        $data['pvsn'] = $_POST['Psn'];
+        $data['pnickname'] = $_POST['Pnickname'];
+        $data['popenid'] = $_POST['Popenid'];
+        $data['pheadport'] = $_POST['Pface'];
         $data['ptext'] = $_POST['Ptext'];
-        $data['pphoto'] = $_POST['Pphoto'];
-        $data['parea'] = $_POST['Pquyu'];
-//        $data['total_request'] = 0;//请求数
+        
+        $data['parea'] = $_POST['Parea'];
         $data['ptime'] = time();
         //插入函数
         $result = $Message->add($data);
@@ -85,18 +93,12 @@ class ModifymsgController extends BaseController
             $this->ajaxReturn($return_data);
         }
 
-        dump($_POST);
+        //dump($_POST);
 
     }
 
-
-    /**
-     * 删除动态
-     * @return [type] [description]
-     */
-    public function deleteMsg()
+    public function do_like()
     {
-
         //校验参数
         if (!$_POST['message_id']) {
             $return_data = array();
@@ -105,51 +107,58 @@ class ModifymsgController extends BaseController
             $this->ajaxReturn($return_data);
         }
 
-        //实例化数据表
+        if (!$_POST['psn']) {
+            $return_data = array();
+            $return_data['error_code'] = 1;
+            $return_data['msg'] = '参数不足：psn';
+            $this->ajaxReturn($return_data);
+        }
+
         $Message = M('post');
 
-        //设置条件
+        //查询条件
         $where = array();
         $where['message_id'] = $_POST['message_id'];
+        $message = $Message->where($where)->find();
 
-        //删除
-        $result = $Message->where($where)->delete();
+        //判断存在这条帖子
+        if (!$message) {
+            $return_data = array();
+            $return_data['error_code'] = 1;
+            $return_data['msg'] = '指定动态不存在';
+            $this->ajaxReturn($return_data);
+        }
 
+        //构造保存的数据
+        $data = array();
+        if($message['total_likes']>=0){
+            $data['total_likes'] = $message['total_likes'] + 1;
+        }
+//        if ($message['total_likes']<=1) {
+//            $data['total_likes'] = $message['total_likes'] + 1;
+//        } else {
+//            $data['total_likes'] =1;
+//        }
+
+        //构造保存的条件
+        $where = array();
+        $where['message_id'] = $_POST['message_id'];
+        //保存
+        $result = $Message->where($where)->save($data);
+        dump($result);
         if ($result) {
             $return_data = array();
             $return_data['error_code'] = 0;
-            $return_data['msg'] = '动态删除成功';
+            $return_data['msg'] = '数据保存成功';
+            $return_data['data']['message_id'] = $_POST['message_id'];
+            $return_data['data']['total_likes'] = $_POST['total_likes'];
 
             $this->ajaxReturn($return_data);
         } else {
             $return_data = array();
             $return_data['error_code'] = 2;
-            $return_data['msg'] = '动态删除失败';
-
+            $return_data['msg'] = '数据保存失败';
             $this->ajaxReturn($return_data);
         }
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

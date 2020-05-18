@@ -1,3 +1,0 @@
-php后端部分由孙美意和王嘉琦协同开发。
-孙美意负责搭建服务器，负责与前端交互debug工作和一部分接口函数编写：getOpenid；ifOpenid；idVeri；fduserMsg。
-王嘉琦负责编写另一部分接口函数：storeMsg；showMsg；deleteMsg。

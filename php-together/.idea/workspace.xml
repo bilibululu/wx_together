@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82415851-2f0e-489c-a364-1b9cd5222104" name="Default Changelist" comment="" />
+    <list default="true" id="82415851-2f0e-489c-a364-1b9cd5222104" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PHP-backend/GetuserinfoController.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP-backend/IdveriController.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP-backend/ModifymsgController.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP-backend/ReadmsgController.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP-backend/说明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IdveriController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/IdveriController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/ReadmsgController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/ReadmsgController.class.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,8 +20,12 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1aFpsiOdaMkQZPijdoxyRpI4vqL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -52,6 +64,7 @@
       <workItem from="1589190209459" duration="13166000" />
       <workItem from="1589294348266" duration="654000" />
       <workItem from="1589295777161" duration="1270000" />
+      <workItem from="1589768854807" duration="21000" />
     </task>
     <servers />
   </component>
@@ -71,10 +84,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="524" y="125" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1589211901216" />
-    <state x="336" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1589295777970">
+    <state x="336" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1589768854929">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589295777970" />
+    <state x="336" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589768854929" />
     <state x="297" y="153" key="run.anything.popup" timestamp="1588854773188">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
