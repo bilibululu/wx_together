@@ -28,7 +28,7 @@
 
 
 <scroll-view class="src" scroll-y='true'>
-  <block wx:for="{{toshow}}" wx:for-item="invitor" wx:for-index="id">
+  <block wx:for="{{toshow}}" wx:for-item="invitor" wx:for-index="mid" wx:key="key">
     <view class="cu-card dynamic">
       <view class="cu-item shadow">
         <view class="cu-list menu-avatar">
@@ -49,7 +49,8 @@
 
         <view class="block">
           <text class="al_apply">{{invitor.total_request}}人已申请</text>
-          <button class="btnapply" bindtap="apply">{{btn_content}}</button>
+          <button  data-id="{{invitor.message_id}}" class='btnapply firstListLineStyle' bindtap="apply" disabled="{{invitor.isinvited}}">{{invitor.isinvited==1?"已申请":"申请"}}</button>
+          
         </view>
       </view>
     </view>

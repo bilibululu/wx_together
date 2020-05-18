@@ -14,9 +14,32 @@ page {
 
 .btnapply {
   font-size: 35rpx;
-margin-right: 15rpx;
-color: white;
-background-color: #5cbcaf;
+  margin-right: 15rpx;
+  color: white;
+  background-color: #5cbcaf;
+  border-radius: 98rpx;
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button[disabled]:not([type]) {
+  background-color: #fff;
+  color: #5cbcaf;
+}
+
+button::after {
+  border: none;
+}
+
+.alpply {
+  font-size: 35rpx;
+  margin-right: 15rpx;
+  color: #5cbcaf;
+  background-color: #dbd8d8;
   border-radius: 98rpx;
   padding: 2rpx 40rpx;
   margin-block-end: 15rpx;
@@ -46,25 +69,28 @@ background-color: #5cbcaf;
   justify-content: space-between;
 }
 
-
 .swiper-home {
   height: 30vh;
   width: 100%;
 }
+
 .block-box {
   height: 30vh;
   width: 100%;
 }
+
 .repair-img {
   width: 100vw;
   height: 30vh;
 }
+
 .nav {
   background: white;
   z-index: 99;
   box-shadow: 0rpx -1.2rpx 10rpx 4rpx #dddddd99; /*for Android*/
   -webkit-box-shadow: 0px -0.6px 5px 2px #dddddd99;
 }
+
 .positionFixed {
   position: fixed;
   left: 0;
@@ -74,11 +100,13 @@ background-color: #5cbcaf;
 }
 
 /* 这个属性特别重要！！不然样式会崩掉 */
+
 .topTabSwiper:after {
   content: "";
   clear: both;
   display: block;
 }
+
 .one-tab {
   width: 25vw;
   float: left;
@@ -87,13 +115,16 @@ background-color: #5cbcaf;
   height: 6vh;
   line-height: 4.6vh;
 }
+
 .tab-title-select {
   color: lightcoral;
   font-size: 32rpx;
 }
+
 .tab-title {
   font-size: 32rpx;
 }
+
 .one-tab-line {
   width: 10vw;
   border-bottom: 6rpx solid lightcoral;
@@ -101,6 +132,7 @@ background-color: #5cbcaf;
   margin-top: 1vh;
   margin-bottom: 0.2vh;
 }
+
 .center-tab {
   width: 25vw;
   float: left;
@@ -109,6 +141,7 @@ background-color: #5cbcaf;
   height: 6vh;
   line-height: 4.6vh;
 }
+
 .center-tab1 {
   width: 25vw;
   float: left;
@@ -117,13 +150,15 @@ background-color: #5cbcaf;
   height: 6vh;
   line-height: 4.6vh;
 }
+
 .two-tab-line {
   width: 10vw;
   border-bottom: 6rpx solid lightcoral;
-  margin-left: 19vw;/*（48-10)/2让红线处在选项的中间*/
+  margin-left: 19vw; /*（48-10)/2让红线处在选项的中间*/
   margin-top: 1vh;
   margin-bottom: 0.2vh;
 }
+
 .tab {
   float: left;
   width: 25vw;
@@ -132,8 +167,8 @@ background-color: #5cbcaf;
   height: 6vh;
   line-height: 4.6vh;
 }
+
 .one-page {
   background: white;
   margin-top: 1vh;
 }
-
