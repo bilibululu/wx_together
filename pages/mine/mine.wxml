@@ -1,2 +1,48 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+ <scroll-view bindscroll='layoutScroll' scroll-y="true" style="height: 100vh;">
+
+<scroll-view scroll-x="true" class="nav {{navFixed? 'positionFixed':''}}">
+  <!-- 导航栏 -->
+  <view class='topTabSwiper'>
+    <view class='one-tab' data-current="1" bindtap='checkCurrent'>
+      <view data-current="1" class='{{currentData == 1 ? "tab-title-select" : "tab-title"}}'>已申请</view>
+      <view class='{{currentData == 1 ? "one-tab-line" : ""}}' data-current="1"></view>
+    </view>
+
+    <view class='center-tab' data-current="2" bindtap='checkCurrent'>
+      <view data-current="2" class='{{currentData == 2 ? "tab-title-select" : "tab-title"}}'>已发布</view>
+      <view class='{{currentData == 2 ? "two-tab-line" : ""}}' data-current="2"></view>
+    </view>
+  </view>
+</scroll-view>
+<scroll-view class="src" scroll-y='true'>
+  <block wx:for="{{toshow}}" wx:for-item="invitor" wx:for-index="mid">
+    <view class="cu-card dynamic">
+      <view class="cu-item shadow">
+        <view class="cu-list menu-avatar">
+          <view class="cu-item">
+            <view class="cu-avatar round lg" style="background-image:url({{invitor.pheadport}});"></view>
+            <view class="content flex-sub">
+              <view class="padding">{{invitor.pnickname}}</view>
+              <view class="text-gray text-sm flex justify-between">
+                {{invitor.ptime}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="text-content">
+          {{invitor.ptext}}
+        </view>
+
+
+        <view class="block">
+          <text class="al_apply">{{invitor.total_request}}人已申请</text>
+          <!-- 删除键 -->
+          <view class='{{invitor.isinvted==1?alapply:btnapply}}'  bindtap="apply">{{btn_content}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+ 
+ </scroll-view>
