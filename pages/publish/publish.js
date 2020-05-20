@@ -308,7 +308,7 @@ Page({
             success(res) { },
             complete: function (res) {
               wx.reLaunch({
-                url: '../study/study',
+                url: '../show/show',
               })
             }
           })

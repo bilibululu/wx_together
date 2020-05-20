@@ -17,7 +17,7 @@ page {
   font-size: 35rpx;
   margin-right: 15rpx;
   color: white;
-  background-color: #5cbcaf;
+  background-color: rgb(48, 133, 126);
   border-radius: 98rpx;
   padding: 2rpx 40rpx;
   margin-block-end: 15rpx;
@@ -27,10 +27,23 @@ page {
   justify-content: space-between;
 }
 
+.sbtnapply {
+  font-size: 28rpx;
+  margin-right: 15rpx;
+  color: white;
+  background-color: #9eccc6;
+  border-radius: 98rpx;
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .alpply {
   font-size: 35rpx;
   margin-right: 15rpx;
-  color: #5cbcaf;
+  color:white;
   background-color: #dbd8d8;
   border-radius: 98rpx;
   padding: 2rpx 40rpx;

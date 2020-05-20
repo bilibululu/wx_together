@@ -12,7 +12,7 @@ Page({
   },
 
   //获取动态展示
-  onLoad: function(options) {
+  onLoad: function (options) {
     var that = this
     wx.request({
       url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
@@ -23,7 +23,7 @@ Page({
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       method: 'POST',
-      success: function(res) {
+      success: function (res) {
         console.log(res.data)
         if (!res.data.error_code) {
           that.setData({
@@ -41,19 +41,24 @@ Page({
               'Content-Type': 'application/x-www-form-urlencoded'
             },
             method: 'POST',
-            success: function(res) {
+            success: function (res) {
               console.log(res.data)
-              console.log(that.data.toshow[2].message_id)
-              console.log(res.data.msgid[2].rmessageid)
               for (var i = 0; i < that.data.toshow.length; i++) {
                 var isinvited = "toshow[" + i + "].isinvited"
+                if (that.data.toshow[i].popenid==app.globalData.id){
+                  that.setData({
+                    [isinvited]: 2
+                  })
+                }
+                else{
                 that.setData({
-                  [isinvited]:0
+                  [isinvited]: 0
                 })
+                }
                 for (var n = 0; n < res.data.msgid.length; n++) {
                   if (that.data.toshow[i].message_id == (res.data.msgid[n].rmessageid)) {
                     that.setData({
-                      [isinvited]:1
+                      [isinvited]: 1
                     })
                   }
                 }
@@ -65,7 +70,7 @@ Page({
 
         }
       },
-      fail: function() {
+      fail: function () {
         wx.showToast({
           title: '加载失败',
           icon: 'none',
@@ -87,7 +92,7 @@ Page({
 
 
   // 获取当前滑块的index
-  bindchange: function(e) {
+  bindchange: function (e) {
     console.log('获取当前滑块的index')
     const that = this;
     that.setData({
@@ -95,7 +100,7 @@ Page({
     })
   },
   //点击切换，滑块index赋值
-  checkCurrent: function(e) {
+  checkCurrent: function (e) {
     console.log('点击切换')
     const that = this;
     console.log(e.target.dataset.current)
@@ -115,7 +120,7 @@ Page({
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         method: 'POST',
-        success: function(res) {
+        success: function (res) {
           if (!res.data.error_code) {
             that.setData({
               toshow: res.data.data
@@ -133,13 +138,18 @@ Page({
               method: 'POST',
               success: function (res) {
                 console.log(res.data)
-                console.log(that.data.toshow[2].message_id)
-                console.log(res.data.msgid[2].rmessageid)
                 for (var i = 0; i < that.data.toshow.length; i++) {
                   var isinvited = "toshow[" + i + "].isinvited"
-                  that.setData({
-                    [isinvited]: 0
-                  })
+                  if (that.data.toshow[i].popenid == app.globalData.id) {
+                    that.setData({
+                      [isinvited]: 2
+                    })
+                  }
+                  else {
+                    that.setData({
+                      [isinvited]: 0
+                    })
+                  }
                   for (var n = 0; n < res.data.msgid.length; n++) {
                     if (that.data.toshow[i].message_id == (res.data.msgid[n].rmessageid)) {
                       that.setData({
@@ -154,7 +164,7 @@ Page({
             })
           }
         },
-        fail: function() {
+        fail: function () {
           wx.showToast({
             title: '加载失败',
             icon: 'none',
@@ -167,15 +177,9 @@ Page({
   },
 
   //监听滑动
-  layoutScroll: function(e) {
+  layoutScroll: function (e) {
     this.data.scrollTop = this.data.scrollTop * 1 + e.detail.deltaY * 1;
-    // console.log(this.data.scrollTop)
-    // console.log(this.data.navFixed)
-
-    /** 我这里写了固定值 如果使用rpx 可用query可以动态获取其他的高度 然后修改这里值 */
-    /** 获取方法参考文档 */
-
-    /** scrollTop 在模拟器上检测不是太灵敏 可在真机上测试 基本上不会出现延迟问题 */
+ 
     var navtopHeight = 160;
     if (this.data.scrollTop <= -navtopHeight) {
       this.setData({
@@ -188,7 +192,7 @@ Page({
     }
   },
 
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
     wx.showNavigationBarLoading()
     var that = this;
     wx.request({
@@ -200,7 +204,7 @@ Page({
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       method: 'POST',
-      success: function(res) {
+      success: function (res) {
         if (!res.data.error_code) {
           that.setData({
             toshow: res.data.data
@@ -216,12 +220,20 @@ Page({
               'Content-Type': 'application/x-www-form-urlencoded'
             },
             method: 'POST',
-            success: function(res) {
+            success: function (res) {
+              console.log(res.data)
               for (var i = 0; i < that.data.toshow.length; i++) {
                 var isinvited = "toshow[" + i + "].isinvited"
-                that.setData({
-                  [isinvited]: 0
-                })
+                if (that.data.toshow[i].popenid == app.globalData.id) {
+                  that.setData({
+                    [isinvited]: 2
+                  })
+                }
+                else {
+                  that.setData({
+                    [isinvited]: 0
+                  })
+                }
                 for (var n = 0; n < res.data.msgid.length; n++) {
                   if (that.data.toshow[i].message_id == (res.data.msgid[n].rmessageid)) {
                     that.setData({
@@ -239,7 +251,7 @@ Page({
           wx.stopPullDownRefresh()
         }
       },
-      fail: function() {
+      fail: function () {
         wx.showToast({
           title: '加载失败',
           icon: 'none',
@@ -250,7 +262,7 @@ Page({
   },
 
 
-  apply: function(e) {
+  apply: function (e) {
     var that = this;
     var $msgid = e.currentTarget.dataset.id
     console.log($msgid)
@@ -268,40 +280,75 @@ Page({
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       method: 'POST',
-      success: function(res) {
-         console.log(res.data)
-        //获取是否申请动态
+      success: function (res) {
+        console.log(res.data)
         wx.request({
-          url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
+          url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
           data: {
-            openid: app.globalData.id
+            Parea: that.data.currentData
           },
           header: {
             'Content-Type': 'application/x-www-form-urlencoded'
           },
           method: 'POST',
-          success: function(res) {
+          success: function (res) {
             console.log(res.data)
-            for (var i = 0; i < that.data.toshow.length; i++) {
-              var isinvited = "toshow[" + i + "].isinvited"
+            if (!res.data.error_code) {
               that.setData({
-                [isinvited]: 0
+                toshow: res.data.data
               })
-              for (var n = 0; n < res.data.msgid.length; n++) {
-                if (that.data.toshow[i].message_id == (res.data.msgid[n].rmessageid)) {
-                  that.setData({
-                    [isinvited]:1
-                  })
-                }
-              }
-            }
-            console.log(that.data.toshow)
-          },
 
+
+              //获取是否申请动态
+              wx.request({
+                url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
+                data: {
+                  openid: app.globalData.id
+                },
+                header: {
+                  'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                method: 'POST',
+                success: function (res) {
+                  console.log(res.data)
+                  for (var i = 0; i < that.data.toshow.length; i++) {
+                    var isinvited = "toshow[" + i + "].isinvited"
+                    if (that.data.toshow[i].popenid == app.globalData.id) {
+                      that.setData({
+                        [isinvited]: 2
+                      })
+                    }
+                    else {
+                      that.setData({
+                        [isinvited]: 0
+                      })
+                    }
+                    for (var n = 0; n < res.data.msgid.length; n++) {
+                      if (that.data.toshow[i].message_id == (res.data.msgid[n].rmessageid)) {
+                        that.setData({
+                          [isinvited]: 1
+                        })
+                      }
+                    }
+                  }
+                  console.log(that.data.toshow)
+                },
+
+              })
+
+            }
+          },
+          fail: function () {
+            wx.showToast({
+              title: '加载失败',
+              icon: 'none',
+              duration: 2000
+            })
+          }
         })
         wx.hideLoading()
       },
-      fail: function() {
+      fail: function () {
         wx.showToast({
           title: '申请失败',
           icon: 'none',
