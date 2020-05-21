@@ -186,6 +186,11 @@ onPullDownRefresh:function(){
 
               console.log(that.data.toshow)
             }
+            else{
+              that.setData({
+                toshow: {}
+              })
+            }
           },
           fail: function () {
             wx.showToast({
