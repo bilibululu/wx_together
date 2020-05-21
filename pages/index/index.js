@@ -23,6 +23,9 @@ Page({
 
   onLoad:function(){
     var that=this;
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.getSetting({
       success(res) {
         if (res.authSetting['scope.userInfo']) {
@@ -58,8 +61,12 @@ Page({
                 success: function (res) {
                   console.log(res.data)
                   if (!res.data.error_code) {
-                    that.data.isDirect=true
+                    that.setData({
+                      isDirect:true
+                    })
+                    console.log(that.data.isDirect)
                   }
+                  wx.hideLoading()
                 },
                 fail: function () {
                   wx.showToast({

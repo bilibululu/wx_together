@@ -29,7 +29,16 @@ Page({
           that.setData({
             toshow: res.data.data
           })
+          for (var i = 0; i < that.data.toshow.length; i++) {
+            var isinvited = "toshow[" + i + "].isinvited"
+            if (that.data.toshow[i].popenid == app.globalData.id) {
+              that.setData({
+                [isinvited]: 2
+              })
+            }
+          }
 
+         console.log(that.data.toshow)
 
           //获取是否申请动态
           wx.request({
@@ -43,6 +52,7 @@ Page({
             method: 'POST',
             success: function (res) {
               console.log(res.data)
+              if(res.data.error_code!=2){
               for (var i = 0; i < that.data.toshow.length; i++) {
                 var isinvited = "toshow[" + i + "].isinvited"
                 if (that.data.toshow[i].popenid==app.globalData.id){
@@ -63,9 +73,10 @@ Page({
                   }
                 }
               }
+              }
               console.log(that.data.toshow)
-            },
-
+            }
+            
           })
 
         }
@@ -110,7 +121,8 @@ Page({
       that.setData({
         currentData: e.target.dataset.current
       })
-
+      
+      console.log(that.data.toshow)
       wx.request({
         url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
         data: {
@@ -125,6 +137,14 @@ Page({
             that.setData({
               toshow: res.data.data
             })
+            for (var i = 0; i < that.data.toshow.length; i++) {
+              var isinvited = "toshow[" + i + "].isinvited"
+              if (that.data.toshow[i].popenid == app.globalData.id) {
+                that.setData({
+                  [isinvited]: 2
+                })
+              }
+            }
             console.log(that.data.toshow)
             //获取是否申请动态
             wx.request({
@@ -138,6 +158,7 @@ Page({
               method: 'POST',
               success: function (res) {
                 console.log(res.data)
+                if (res.data.error_code != 2) {
                 for (var i = 0; i < that.data.toshow.length; i++) {
                   var isinvited = "toshow[" + i + "].isinvited"
                   if (that.data.toshow[i].popenid == app.globalData.id) {
@@ -157,6 +178,7 @@ Page({
                       })
                     }
                   }
+                }
                 }
                 console.log(that.data.toshow)
               },
@@ -209,6 +231,14 @@ Page({
           that.setData({
             toshow: res.data.data
           })
+          for (var i = 0; i < that.data.toshow.length; i++) {
+            var isinvited = "toshow[" + i + "].isinvited"
+            if (that.data.toshow[i].popenid == app.globalData.id) {
+              that.setData({
+                [isinvited]: 2
+              })
+            }
+          }
 
           //获取是否申请动态
           wx.request({
@@ -222,6 +252,7 @@ Page({
             method: 'POST',
             success: function (res) {
               console.log(res.data)
+              if (res.data.error_code != 2) {
               for (var i = 0; i < that.data.toshow.length; i++) {
                 var isinvited = "toshow[" + i + "].isinvited"
                 if (that.data.toshow[i].popenid == app.globalData.id) {
@@ -241,6 +272,7 @@ Page({
                     })
                   }
                 }
+              }
               }
               console.log(that.data.toshow)
             },
@@ -295,8 +327,7 @@ Page({
               that.setData({
                 toshow: res.data.data
               })
-
-
+             
               //获取是否申请动态
               wx.request({
                 url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
@@ -309,6 +340,7 @@ Page({
                 method: 'POST',
                 success: function (res) {
                   console.log(res.data)
+                  if (res.data.error_code != 2) {
                   for (var i = 0; i < that.data.toshow.length; i++) {
                     var isinvited = "toshow[" + i + "].isinvited"
                     if (that.data.toshow[i].popenid == app.globalData.id) {
@@ -328,6 +360,7 @@ Page({
                         })
                       }
                     }
+                  }
                   }
                   console.log(that.data.toshow)
                 },

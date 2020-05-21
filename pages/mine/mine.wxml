@@ -46,11 +46,11 @@
           </view>
 
           <view wx:if="{{currentData==2}}">
-            <view wx:if="{{invitor.state==0}}" class="block">
+            <view wx:if="{{invitor.data.pstate==0}}" class="block">
               <text class="al_apply">{{invitor.data.total_request}}人已申请</text>
               <button class="btnapply" bindtap="complete" data-id="{{invitor.data.message_id}}">完成</button>
             </view>
-            <view wx:if="{{invitor.state!=0}}" class="block">
+            <view wx:if="{{invitor.data.pstate!=0}}" class="block">
               <text class="al_apply1">{{invitor.data.total_request}}人申请</text>
               <text class="tnapply">组队已完成</text>
             </view>

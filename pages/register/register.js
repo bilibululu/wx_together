@@ -32,6 +32,9 @@ Page({
 
   isTrue:function(){
     var that = this;
+    wx.showLoading({
+      title: '实名认证中',
+    })
     wx.request({
       url: 'http://together123.applinzi.com/together/index.php/Home/Idveri/idVeri', 
       data: {
@@ -49,6 +52,7 @@ Page({
         console.log(res.data)
       
         if(!res.data.error_code){
+          wx.hideLoading()
           wx.reLaunch({
             url: '../publish/publish',
           })
@@ -60,7 +64,15 @@ Page({
             duration: 2000
           })
         }
+      },
+      fail(res){
+        wx.showToast({
+          title: '实名认证失败',
+          icon: 'none',
+          duration: 2000
+        })
       }
+      
     })
   },
  
