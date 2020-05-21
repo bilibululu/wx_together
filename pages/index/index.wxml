@@ -1,5 +1,5 @@
 
 <view class="content">
     <image class='background' src="https://ae01.alicdn.com/kf/Hff7f34f8c0884302b53e40e34fcb598bl.jpg" mode="aspectFill"></image>
-    <button class="btn1" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">{{isDirect==false?"实名认证":"登入"}}</button>
+    <button class="btn1" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">{{isDirect==false?"实名认证":"开始抱团"}}</button>
 </view>

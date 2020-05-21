@@ -36,7 +36,7 @@ Page({
       title: '实名认证中',
     })
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Idveri/idVeri', 
+      url: 'https://together123.applinzi.com/together/index.php/Home/Idveri/idVeri', 
       data: {
         name: that.data.sname,
         sId:that.data.student,

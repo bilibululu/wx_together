@@ -15,7 +15,7 @@ Page({
     //获取已经申请的动态
     if (that.data.currentData == 1) {
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMyrequest',
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMyrequest',
         data: {
           ropenid: app.globalData.id
         },
@@ -35,7 +35,7 @@ Page({
         },
         fail: function () {
           wx.showToast({
-            title: '加载失败',
+            title: '生活不易，团子叹气',
             icon: 'none',
             duration: 2000
           })
@@ -45,7 +45,7 @@ Page({
     //获取已发布的动态
     else {
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
         data: {
           popenid: app.globalData.id
         },
@@ -64,7 +64,7 @@ Page({
         },
         fail: function () {
           wx.showToast({
-            title: '加载失败',
+            title: '生活不易，团子叹气',
             icon: 'none',
             duration: 2000
           })
@@ -88,7 +88,7 @@ onPullDownRefresh:function(){
   //获取已经申请的动态
   if (that.data.currentData == 1) {
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMyrequest',
+      url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMyrequest',
       data: {
         ropenid: app.globalData.id
       },
@@ -108,7 +108,7 @@ onPullDownRefresh:function(){
       },
       fail: function () {
         wx.showToast({
-          title: '加载失败',
+          title: '生活不易，团子叹气',
           icon: 'none',
           duration: 2000
         })
@@ -118,7 +118,7 @@ onPullDownRefresh:function(){
   //获取已发布的动态
   else {
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
+      url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
       data: {
         popenid: app.globalData.id
       },
@@ -137,7 +137,7 @@ onPullDownRefresh:function(){
       },
       fail: function () {
         wx.showToast({
-          title: '加载失败',
+          title: '生活不易，团子叹气',
           icon: 'none',
           duration: 2000
         })
@@ -169,7 +169,7 @@ onPullDownRefresh:function(){
       //获取已经申请的动态
       if (that.data.currentData == 1) {
         wx.request({
-          url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMyrequest',
+          url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMyrequest',
           data: {
             ropenid: app.globalData.id
           },
@@ -194,7 +194,7 @@ onPullDownRefresh:function(){
           },
           fail: function () {
             wx.showToast({
-              title: '加载失败',
+              title: '生活不易，团子叹气',
               icon: 'none',
               duration: 2000
             })
@@ -204,7 +204,7 @@ onPullDownRefresh:function(){
       //获取已发布的动态
       else {
         wx.request({
-          url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
+          url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
           data: {
             popenid: app.globalData.id
           },
@@ -220,10 +220,15 @@ onPullDownRefresh:function(){
               })
               console.log(that.data.toshow)
             }
+            else {
+              that.setData({
+                toshow: {}
+              })
+            }
           },
           fail: function () {
             wx.showToast({
-              title: '加载失败',
+              title: '生活不易，团子叹气',
               icon: 'none',
               duration: 2000
             })
@@ -253,11 +258,11 @@ onPullDownRefresh:function(){
 complete:function(e){
   var that = this;
   wx.showLoading({
-    title: '发送请求中',
+    title: '团子努力奔跑中',
   })
  //发送完成请求
   wx.request({
-    url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/finishMsg',
+    url: 'https://together123.applinzi.com/together/index.php/Home/Modifymsg/finishMsg',
     data: {
       message_id: e.currentTarget.dataset.id
     },
@@ -269,7 +274,7 @@ complete:function(e){
       console.log(res.data)
       //刷新显示
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
         data: {
           popenid: app.globalData.id
         },
@@ -289,15 +294,15 @@ complete:function(e){
       })
       wx.hideLoading()
       wx.showToast({
-        title: '组队完成',
-        icon: 'none',
+        title: '恭喜抱团成功',
+        icon: 'success',
         duration: 2000
       })
     },
     fail: function () {
       wx.showToast({
-        title: '发送失败',
-        icon: 'none',
+        title: 'you可能断网了~',
+        icon: 'loading',
         duration: 2000
       })
     }
@@ -308,11 +313,11 @@ complete:function(e){
 agree:function(e){
   var that = this;
   wx.showLoading({
-    title: '发送请求中',
+    title: '团子正在努力奔跑中！',
   })
   //发送同意请求
   wx.request({
-    url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/acptRequest',
+    url: 'https://together123.applinzi.com/together/index.php/Home/Modifymsg/acptRequest',
     data: {
       ropenid: e.currentTarget.dataset.oid,
       message_id: e.currentTarget.dataset.mid
@@ -325,7 +330,7 @@ agree:function(e){
       console.log(res.data)
       //刷新显示
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
         data: {
           popenid: app.globalData.id
         },
@@ -345,14 +350,14 @@ agree:function(e){
       })
       wx.hideLoading()
       wx.showToast({
-        title: '已同意',
-        icon: 'none',
+        title: '已同意抱团',
+        icon: 'success',
         duration: 2000
       })
     },
     fail: function () {
       wx.showToast({
-        title: '发送失败',
+        title: 'you可能断网了',
         icon: 'none',
         duration: 2000
       })

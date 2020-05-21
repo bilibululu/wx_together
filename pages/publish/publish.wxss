@@ -64,9 +64,10 @@ page{
   border: none;
 }
 .warm{
-  background-color: rgb(197, 237, 223);
+  background-color: #f7f7f7;
 }
 .content{
   font-size: 30rpx;
   margin-left: 60rpx;
+  color:lightcoral
 }

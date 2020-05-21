@@ -24,7 +24,7 @@ Page({
   onLoad:function(){
     var that=this;
     wx.showLoading({
-      title: '加载中',
+      title: '努力奔跑中！',
     })
     wx.getSetting({
       success(res) {
@@ -44,7 +44,7 @@ Page({
           console.log(res.code)
           //发送请求
           wx.request({
-            url: 'http://together123.applinzi.com/together/index.php/Home/Getuserinfo/getOpenid',
+            url: 'https://together123.applinzi.com/together/index.php/Home/Getuserinfo/getOpenid',
             data: { code: res.code },
             header: {
               'content-type': 'application/json' //默认值
@@ -54,7 +54,7 @@ Page({
               console.log(res.data)
               console.log(app.globalData.id)
               wx.request({
-                url: 'http://together123.applinzi.com/together/index.php/Home/Getuserinfo/ifOpenid',
+                url: 'https://together123.applinzi.com/together/index.php/Home/Getuserinfo/ifOpenid',
                 data: { id: app.globalData.id },
                 header: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 method: 'POST',
@@ -70,7 +70,7 @@ Page({
                 },
                 fail: function () {
                   wx.showToast({
-                    title: '登陆失败',
+                    title: '团子哦豁~',
                     icon: 'none',
                     duration: 2000
                   })

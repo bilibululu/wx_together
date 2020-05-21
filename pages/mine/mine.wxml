@@ -39,20 +39,20 @@
             <view  class="block">
               <text wx:if="{{invitor.state==0}}"class="al_apply">{{invitor.data.total_request}}人已申请</text>
                <text wx:if="{{invitor.state!=0}}" class="al_apply1">{{invitor.data.total_request}}人申请</text>
-               <text wx:if="{{invitor.state==0}}"class="alpply">处理中</text>
-               <text wx:if="{{invitor.state==1}}"class="alpply1">已同意</text>
-                 <text wx:if="{{invitor.state==2}}"class="alpply2">已拒绝</text>
+               <text wx:if="{{invitor.state==0}}"class="alpply">抱团中</text>
+               <text wx:if="{{invitor.state==1}}"class="alpply1">成功</text>
+                 <text wx:if="{{invitor.state==2}}"class="alpply2">失败</text>
             </view>
           </view>
 
           <view wx:if="{{currentData==2}}">
             <view wx:if="{{invitor.data.pstate==0}}" class="block">
               <text class="al_apply">{{invitor.data.total_request}}人已申请</text>
-              <button class="btnapply" bindtap="complete" data-id="{{invitor.data.message_id}}">完成</button>
+              <button class="btnapply" bindtap="complete" data-id="{{invitor.data.message_id}}">完成抱团</button>
             </view>
             <view wx:if="{{invitor.data.pstate!=0}}" class="block">
               <text class="al_apply1">{{invitor.data.total_request}}人申请</text>
-              <text class="tnapply">组队已完成</text>
+              <text class="tnapply">抱团成功</text>
             </view>
             <block wx:for="{{invitor.manmsg}}" wx:for-item="apply" wx:for-index="mid" wx:key="key">
               <view class="block">

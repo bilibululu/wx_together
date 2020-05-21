@@ -7,7 +7,7 @@ Page({
     scrollTop: '',
     navFixed: false,
     currentData: 1,
-    content1: '申请',
+    content1: '申请抱团',
     content2: '已申请'
   },
 
@@ -15,7 +15,7 @@ Page({
   onLoad: function (options) {
     var that = this
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
+      url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
       data: {
         Parea: that.data.currentData
       },
@@ -42,7 +42,7 @@ Page({
 
           //获取是否申请动态
           wx.request({
-            url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
+            url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
             data: {
               openid: app.globalData.id
             },
@@ -83,7 +83,7 @@ Page({
       },
       fail: function () {
         wx.showToast({
-          title: '加载失败',
+          title: 'you可能断网了',
           icon: 'none',
           duration: 2000
         })
@@ -124,7 +124,7 @@ Page({
       
       console.log(that.data.toshow)
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
         data: {
           Parea: that.data.currentData
         },
@@ -148,7 +148,7 @@ Page({
             console.log(that.data.toshow)
             //获取是否申请动态
             wx.request({
-              url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
+              url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
               data: {
                 openid: app.globalData.id
               },
@@ -218,7 +218,7 @@ Page({
     wx.showNavigationBarLoading()
     var that = this;
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
+      url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
       data: {
         Parea: that.data.currentData
       },
@@ -242,7 +242,7 @@ Page({
 
           //获取是否申请动态
           wx.request({
-            url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
+            url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
             data: {
               openid: app.globalData.id
             },
@@ -297,11 +297,11 @@ Page({
   apply: function (e) {
     var that = this;
     wx.showLoading({
-      title: '申请组队中',
+      title: '申请抱团中',
     })
 
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/doRequest',
+      url: 'https://together123.applinzi.com/together/index.php/Home/Modifymsg/doRequest',
       data: {
         openid: app.globalData.id,
         message_id: e.currentTarget.dataset.id
@@ -312,8 +312,14 @@ Page({
       method: 'POST',
       success: function (res) {
         console.log(res.data)
+        wx.hideLoading()
+        wx.showToast({
+          title: '已申请抱团',
+          icon:'success',
+          duration:3000
+        })
         wx.request({
-          url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
+          url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/showMsg',
           data: {
             Parea: that.data.currentData
           },
@@ -330,7 +336,7 @@ Page({
              
               //获取是否申请动态
               wx.request({
-                url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
+                url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/ifRequest',
                 data: {
                   openid: app.globalData.id
                 },

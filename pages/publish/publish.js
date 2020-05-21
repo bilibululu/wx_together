@@ -1,19 +1,19 @@
-//holes.js
-//获取应用实例
+
 const app = getApp()
 
 Page({
   data: {
-    datail: "",//树洞内容
+    datail: "",
     labelarray:[1,2,3,4],//标签
     index:-1,
     label:0,
-    // productInfo:""
     score1:'#f7f7f7',
     score2:'#f7f7f7',
     score3:'#f7f7f7',
     score4:'#f7f7f7',
-    a:0
+    a:0,
+    color1:'#ffffff',
+    color2:'##5cbcaf'
   },
   //label传递函数
   label1:function(){
@@ -24,7 +24,7 @@ Page({
     })
     if(that.data.a==1|that.data.a==0){
       that.setData({
-        score1: 'rgb(197, 237, 223)',
+        score1: 'rgb(48, 133, 126)',
         score2:'#f7f7f7',
         score3:'#f7f7f7',
         score4:'#f7f7f7'
@@ -38,7 +38,7 @@ Page({
     console.log(that.data.label)
     console.log('onLoad')
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', 
         data: {vopenid:getApp().globalData.id},
         header: {
           'content-type': 'application/x-www-form-urlencoded' 
@@ -56,13 +56,13 @@ Page({
   },
   
   label2:function(){
-    var that=this//保存this
+    var that=this
     that.setData({
       a:2
       })
     if(that.data.a==2|that.data.a==0){
       that.setData({
-        score2: 'rgb(197, 237, 223)',
+        score2: 'rgb(48, 133, 126)',
         score1:'#f7f7f7',
         score3:'#f7f7f7',
         score4:'#f7f7f7'
@@ -77,7 +77,7 @@ Page({
     console.log(that.data.label)
     console.log('onLoad')
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
         data: {vopenid:getApp().globalData.id},
         header: {
           'content-type': 'application/x-www-form-urlencoded' 
@@ -101,7 +101,7 @@ Page({
     })
     if(that.data.a==3|that.data.a==0){
       that.setData({
-        score3: 'rgb(197, 237, 223)',
+        score3: 'rgb(48, 133, 126)',
         score2:'#f7f7f7',
         score1:'#f7f7f7',
         score4:'#f7f7f7'
@@ -115,7 +115,7 @@ Page({
     console.log(that.data.label)
     console.log('onLoad')
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
         data: {vopenid:getApp().globalData.id},
         header: {
           'content-type': 'application/x-www-form-urlencoded' 
@@ -138,7 +138,7 @@ Page({
     })
     if(that.data.a==4|that.data.a==0){
       that.setData({
-        score4: 'rgb(197, 237, 223)',
+        score4: 'rgb(48, 133, 126)',
         score2:'#f7f7f7',
         score3:'#f7f7f7',
         score1:'#f7f7f7'
@@ -152,7 +152,7 @@ Page({
     console.log(that.data.label)
     console.log('onLoad')
       wx.request({
-        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
+        url: 'https://together123.applinzi.com/together/index.php/Home/Readmsg/getVsn', //真实的接口地址
         data: {vopenid:getApp().globalData.id},
         header: {
           'content-type': 'application/x-www-form-urlencoded' 
@@ -174,87 +174,7 @@ Page({
     this.data.detail = e.detail.value
   },
   
-//图片上传
-// chooseImage: function () {
-//   var that = this;
-//   let maxSize = 1024 * 1024 * 5;//5M大小的图片
-//   let maxLength = 1;
-//   let flag = true;
-//   //选择图片部分
-//   wx.chooseImage({
-//     count: 1, //最多可以选择的图片总数
-//     sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-//     sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
 
-//     success: function (res) {
-//       //返回选定照片的本地文件路径列表，tenpFilePaths可以作为img标签的src属性显示图片
-//       var temlFilePaths = res.tempFilePaths
-//       //启动上传等待中
-//       wx.showToast({
-//         title: '正在上传...',
-//         icon: 'loading',
-//         mask: true,
-//         duration: 500//延迟时间
-//       })
-//       // var uploadImgCournt=0
-      
-//       for (let i = 0; i < res.tempFiles.length; i++) {
-//         //图片大小是否超标
-//         if (res.tempFiles[i].size > maxSize) {
-//           flag = false;
-//           console.log(111)
-//           wx.showModal({//显示模拟对话框
-//             content: '图片太大，不允许上传',
-//             showCancel: false,
-//             success: function (res) {
-//               if (res.confirm) {
-//                 console.log('用户点击确定')
-//               }
-//             }
-//           });
-//         }
-//       }
-//       //图片张数是否超标
-//       if (res.tempFiles.length > maxLength) {
-//         console.log('222');
-//         wx.showModal({
-//           content: '最多能上传' + maxLength + '张图片',
-//           showCancel: false,
-//           success: function (res) {
-//             if (res.confirm) {
-//               console.log('确定');
-//             }
-//           }
-//         })
-//       }
-//       //如果上述条件都满足就更新productInfo
-//       if (flag == true && res.tempFiles.length <= maxLength) {
-//         that.setData({
-//           // imageList: res.tempFilePaths
-//           imageList: temlFilePaths
-//         })
-//         // console.log(res.tempFilePaths)
-//       }
-
-//       var productInfo=res.tempFilePaths[0]
-//           console.log(productInfo)
-//           that.setData({productInfo:productInfo})
-//       console.log(res);//打印res
-//     },
-//     fail: function (res) {
-//       console.log(res);
-//     }
-//   })
-// },
-// previewImage: function (e) { 
-//   var current = e.publish.dataset.src 
-//   wx.previewImage({ 
-//   current: current, 
-//   urls: this.data.productInfo
-//   }) 
-//   console.log(current)
-//   console.log(urls)
-// },
 
   //send按键
   send: function (e) {
@@ -264,20 +184,15 @@ Page({
     })
     console.log(that.data.detail)
     console.log(getApp().globalData.info)
-    // var fs=wx.getFileSystemManager()//用于上传图片
-    // var picture_ad=fs.readFileSync(that.data.productInfo,"base64",)
-    // console.log(picture_ad)
     //与服务器交互
     wx.request({
-      url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/storeMsg', //动态发布接口地址
+      url: 'https://together123.applinzi.com/together/index.php/Home/Modifymsg/storeMsg', //动态发布接口地址
       data: {
         Psn:getApp().globalData.Industry,
         Pnickname: getApp().globalData.info.nickName,
         Pface: getApp().globalData.info.avatarUrl,//头像
         Ptext: that.data.detail,
         Parea:that.data.label,
-        // Pphoto:picture_ad,
-        // Pphoto:that.data.productInfo,
         Popenid:getApp().globalData.id
       },
       method: 'POST',
@@ -286,46 +201,34 @@ Page({
       },
       //回调函数
       success(res) {
+        wx.hideLoading()
         console.log(res.data)//服务器返回的信息
         if (res.data.error_code != 0) {
-          wx.showLoading({
-            title: '哎呀！',
-            content: '不小心出问题了T^T' + res.data.msg,
-            success: function (res) {
-              if (res.confirm) {
-                console.log('用户点击确定')
-              } else if (res.cancel) {
-                console.log('用户点击取消')
-              }
-            }
+          wx.showToast({
+            title: '要选择分区哦！',
+            icon: 'loading',
+            duration: 2000
           })
         }
         else if (res.data.error_code == 0) {
-          wx.showLoading({
-            title: 'wow',
-            content: '动态发布成功了！',
-            showCancel: false,
-            success(res) { },
-            complete: function (res) {
-              wx.reLaunch({
-                url: '../show/show',
-              })
+          wx.showToast({
+            title: '噼里啪啦，动态发布！',
+            icon: 'success',
+            duration: 1000,
+            success: function () {
+              setTimeout(function () {
+                wx.switchTab({ url: '/pages/show/show' })
+              }, 1000);
             }
           })
         }
       },
       
       fail: function (res) {
-        wx.showLoading({
-          title: '哎呀！',
-          content: '您的网络不在状态',
-          success: function (res) {
-            if (res.confirm) {
-              console.log('用户点击确定')
-            } else if (res.cancel) {
-              console.log('用户点击取消')
-            }
-          }
+        wx.showToast({
+          title: '哦了个豁~',
+          icon: 'none',
+          duration: 2000
         })
       }
     })
@@ -336,8 +239,5 @@ Page({
       score3:'#f7f7f7',
       score4:'#f7f7f7'
     })
-    setTimeout(function () {
-      wx.hideLoading()
-    }, 2000)
   },
 })
