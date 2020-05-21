@@ -264,8 +264,6 @@ Page({
 
   apply: function (e) {
     var that = this;
-    var $msgid = e.currentTarget.dataset.id
-    console.log($msgid)
     wx.showLoading({
       title: '申请组队中',
     })

@@ -57,7 +57,7 @@ Page({
           console.log(res.data)
           if (!res.data.error_code) {
             that.setData({
-              toshow: res.data.msg
+              toshow: res.data
             })
             console.log(that.data.toshow)
           }
@@ -130,7 +130,7 @@ onPullDownRefresh:function(){
         console.log(res.data)
         if (!res.data.error_code) {
           that.setData({
-            toshow: res.data.msg
+            toshow: res.data
           })
           console.log(that.data.toshow)
         }
@@ -247,16 +247,14 @@ onPullDownRefresh:function(){
 //组队完成按钮
 complete:function(e){
   var that = this;
-  var $msgid = e.currentTarget.dataset.id
-  console.log($msgid)
   wx.showLoading({
-    title: '加载中',
+    title: '发送请求中',
   })
  //发送完成请求
   wx.request({
-    url: '',
+    url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/finishMsg',
     data: {
-      $msgid
+      message_id: e.currentTarget.dataset.id
     },
     header: {
       'Content-Type': 'application/x-www-form-urlencoded'
@@ -266,9 +264,9 @@ complete:function(e){
       console.log(res.data)
       //刷新显示
       wx.request({
-        url: '',
+        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
         data: {
-          openid: app.globalData.id
+          popenid: app.globalData.id
         },
         header: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -276,10 +274,20 @@ complete:function(e){
         method: 'POST',
         success: function (res) {
           console.log(res.data)
-         
+          if (!res.data.error_code) {
+            that.setData({
+              toshow: res.data
+            })
+            console.log(that.data.toshow)
+          }
         }
       })
       wx.hideLoading()
+      wx.showToast({
+        title: '组队完成',
+        icon: 'none',
+        duration: 2000
+      })
     },
     fail: function () {
       wx.showToast({
@@ -293,6 +301,57 @@ complete:function(e){
 
 //同意组队
 agree:function(e){
-
+  var that = this;
+  wx.showLoading({
+    title: '发送请求中',
+  })
+  //发送同意请求
+  wx.request({
+    url: 'http://together123.applinzi.com/together/index.php/Home/Modifymsg/acptRequest',
+    data: {
+      ropenid: e.currentTarget.dataset.oid,
+      message_id: e.currentTarget.dataset.mid
+    },
+    header: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    method: 'POST',
+    success: function (res) {
+      console.log(res.data)
+      //刷新显示
+      wx.request({
+        url: 'http://together123.applinzi.com/together/index.php/Home/Readmsg/showMypublish',
+        data: {
+          popenid: app.globalData.id
+        },
+        header: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        method: 'POST',
+        success: function (res) {
+          console.log(res.data)
+          if (!res.data.error_code) {
+            that.setData({
+              toshow: res.data
+            })
+            console.log(that.data.toshow)
+          }
+        }
+      })
+      wx.hideLoading()
+      wx.showToast({
+        title: '已同意',
+        icon: 'none',
+        duration: 2000
+      })
+    },
+    fail: function () {
+      wx.showToast({
+        title: '发送失败',
+        icon: 'none',
+        duration: 2000
+      })
+    }
+  })
 }
 })

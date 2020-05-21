@@ -27,6 +27,22 @@ page {
   justify-content: space-between;
 }
 
+button[disabled]:not([type]) {
+  background-color: #fff;
+  color: #5cbcaf;
+}
+
+.tnapply {
+  font-size: 35rpx;
+  color: rgb(48, 133, 126);
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .sbtnapply {
   font-size: 28rpx;
   margin-right: 15rpx;
@@ -40,6 +56,19 @@ page {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.stnapply {
+  font-size: 28rpx;
+  margin-right: 15rpx;
+  color: #9eccc6;
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .alpply {
   font-size: 35rpx;
   margin-right: 15rpx;
