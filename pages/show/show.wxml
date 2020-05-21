@@ -1,60 +1,63 @@
 <scroll-view bindscroll='layoutScroll' scroll-y="true" style="height: 100vh;">
 
-<scroll-view scroll-x="true" class="nav {{navFixed? 'positionFixed':''}}">
-  <!-- 导航栏 -->
-  <view class='topTabSwiper'>
-    <view class='one-tab' data-current="1" bindtap='checkCurrent'>
-      <view data-current="1" class='{{currentData == 1 ? "tab-title-select" : "tab-title"}}'>学习</view>
-      <view class='{{currentData == 1 ? "one-tab-line" : ""}}' data-current="1"></view>
+  <scroll-view scroll-x="true" class="nav {{navFixed? 'positionFixed':''}}">
+    <!-- 导航栏 -->
+    <view class='topTabSwiper'>
+      <view class='one-tab' data-current="1" bindtap='checkCurrent'>
+        <view data-current="1" class='{{currentData == 1 ? "tab-title-select" : "tab-title"}}'>学习</view>
+        <view class='{{currentData == 1 ? "one-tab-line" : ""}}' data-current="1"></view>
+      </view>
+
+      <view class='center-tab' data-current="2" bindtap='checkCurrent'>
+        <view data-current="2" class='{{currentData == 2 ? "tab-title-select" : "tab-title"}}'>运动</view>
+        <view class='{{currentData == 2 ? "two-tab-line" : ""}}' data-current="2"></view>
+      </view>
+
+      <view class='center-tab1' data-current="3" bindtap='checkCurrent'>
+        <view data-current="3" class='{{currentData == 3 ? "tab-title-select" : "tab-title"}}'>娱乐</view>
+        <view class='{{currentData == 3 ? "two-tab-line" : ""}}' data-current="3"></view>
+      </view>
+
+      <view class='tab' data-current="4" bindtap='checkCurrent'>
+        <view data-current="4" class='{{currentData == 4 ? "tab-title-select" : "tab-title"}}'>日常</view>
+        <view class='{{currentData == 4 ? "one-tab-line" : ""}}' data-current="4"></view>
+      </view>
     </view>
 
-    <view class='center-tab' data-current="2" bindtap='checkCurrent'>
-      <view data-current="2" class='{{currentData == 2 ? "tab-title-select" : "tab-title"}}'>运动</view>
-      <view class='{{currentData == 2 ? "two-tab-line" : ""}}' data-current="2"></view>
-    </view>
-
-    <view class='center-tab1' data-current="3" bindtap='checkCurrent'>
-      <view data-current="3" class='{{currentData == 3 ? "tab-title-select" : "tab-title"}}'>娱乐</view>
-      <view class='{{currentData == 3 ? "two-tab-line" : ""}}' data-current="3"></view>
-    </view>
-
-    <view class='tab' data-current="4" bindtap='checkCurrent'>
-      <view data-current="4" class='{{currentData == 4 ? "tab-title-select" : "tab-title"}}'>日常</view>
-      <view class='{{currentData == 4 ? "one-tab-line" : ""}}' data-current="4"></view>
-    </view>
-  </view>
-
-</scroll-view>
+  </scroll-view>
 
 
-<scroll-view class="src" scroll-y='true'>
-  <block wx:for="{{toshow}}" wx:for-item="invitor" wx:for-index="mid" wx:key="key">
-    <view class="cu-card dynamic">
-      <view class="cu-item shadow">
-        <view class="cu-list menu-avatar">
-          <view class="cu-item">
-            <view class="cu-avatar round lg" style="background-image:url({{invitor.pheadport}});"></view>
-            <view class="content flex-sub">
-              <view class="padding">{{invitor.pnickname}}</view>
-              <view class="text-gray text-sm flex justify-between">
-                {{invitor.ptime}}
+  <scroll-view class="src" scroll-y='true'>
+    <block wx:for="{{toshow}}" wx:for-item="invitor" wx:for-index="mid" wx:key="key">
+      <view class="cu-card dynamic">
+        <view class="cu-item shadow">
+          <view class="cu-list menu-avatar">
+            <view class="cu-item">
+              <view class="cu-avatar round lg" style="background-image:url({{invitor.pheadport}});"></view>
+              <view class="content flex-sub">
+                <view class="padding">{{invitor.pnickname}}</view>
+                <view class="text-gray text-sm flex justify-between">
+                  {{invitor.ptime}}
+                </view>
               </view>
             </view>
           </view>
-        </view>
-        <view class="text-content">
-          {{invitor.ptext}}
-        </view>
+          <view class="text-content">
+            {{invitor.ptext}}
+          </view>
 
 
-        <view class="block">
-          <text class="al_apply">{{invitor.total_request}}人已申请</text>
-          <button  wx:if="{{invitor.isinvited!=2}}" data-id="{{invitor.message_id}}" class='btnapply firstListLineStyle' bindtap="apply" disabled="{{invitor.isinvited}}">{{invitor.isinvited==1?"已申请":"申请"}}</button>
-          
+          <view wx:if="{{invitor.pstate==0}}" class="block">
+            <text class="al_apply">{{invitor.total_request}}人已申请</text>
+            <button wx:if="{{invitor.isinvited!=2}}" data-id="{{invitor.message_id}}" class='btnapply firstListLineStyle' bindtap="apply" disabled="{{invitor.isinvited}}">{{invitor.isinvited==1?"已申请":"申请"}}</button>
+          </view>
+          <view wx:if="{{invitor.pstate!=0}}" class="block">
+          <text class="al_apply1">{{invitor.total_request}}人申请</text>
+            <text class="tnapply">组队已完成</text>
+          </view>
         </view>
       </view>
-    </view>
-  </block>
+    </block>
+  </scroll-view>
+
 </scroll-view>
- 
- </scroll-view>

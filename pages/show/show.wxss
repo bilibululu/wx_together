@@ -12,6 +12,17 @@ page {
   position: absolute;
 }
 
+.tnapply {
+  font-size: 35rpx;
+  color: rgb(177, 177, 177);
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .btnapply {
   font-size: 35rpx;
   margin-right: 15rpx;
@@ -67,6 +78,19 @@ button::after {
   align-items: flex-end;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.al_apply1 {
+  font-size: 30rpx;
+  color:rgb(177, 177, 177);
+  height: 32rpx;
+  margin-left: 15rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
 }
 
 .swiper-home {

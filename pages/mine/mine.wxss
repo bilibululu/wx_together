@@ -34,7 +34,7 @@ button[disabled]:not([type]) {
 
 .tnapply {
   font-size: 35rpx;
-  color: rgb(48, 133, 126);
+  color: rgb(177, 177, 177);
   padding: 2rpx 40rpx;
   margin-block-end: 15rpx;
   display: flex;
@@ -73,7 +73,33 @@ button[disabled]:not([type]) {
   font-size: 35rpx;
   margin-right: 15rpx;
   color:white;
-  background-color: #dbd8d8;
+  background-color: #5cbcaf;
+  border-radius: 98rpx;
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.alpply1 {
+  font-size: 35rpx;
+  margin-right: 15rpx;
+  color:white;
+  background-color: #cfcfcf;
+  border-radius: 98rpx;
+  padding: 2rpx 40rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.alpply2 {
+  font-size: 35rpx;
+  margin-right: 15rpx;
+  color:lightcoral;
+  background-color:white;
   border-radius: 98rpx;
   padding: 2rpx 40rpx;
   margin-block-end: 15rpx;
@@ -96,6 +122,18 @@ button[disabled]:not([type]) {
 .al_apply {
   font-size: 30rpx;
   color: #5cbcaf;
+  height: 32rpx;
+  margin-left: 15rpx;
+  margin-block-end: 15rpx;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
+}
+.al_apply1 {
+  font-size: 30rpx;
+  color:rgb(177, 177, 177);
   height: 32rpx;
   margin-left: 15rpx;
   margin-block-end: 15rpx;
