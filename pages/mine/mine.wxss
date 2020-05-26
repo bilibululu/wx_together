@@ -45,7 +45,7 @@ button[disabled]:not([type]) {
 
 .sbtnapply {
   font-size: 28rpx;
-  margin-right: 15rpx;
+ margin-right: 15rpx;
   color: white;
   background-color: #9eccc6;
   border-radius: 98rpx;
@@ -115,8 +115,6 @@ button[disabled]:not([type]) {
   align-items: flex-end;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 30rpx;
-  margin-bottom: 20rpx;
 }
 
 .al_apply {
@@ -124,12 +122,12 @@ button[disabled]:not([type]) {
   color: #5cbcaf;
   height: 32rpx;
   margin-left: 15rpx;
-  margin-block-end: 15rpx;
+  margin-bottom: 20rpx;
   display: flex;
   align-items: flex-end;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 5rpx;
+ 
 }
 .al_apply1 {
   font-size: 30rpx;

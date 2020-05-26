@@ -171,7 +171,11 @@ Page({
 
   //text传递函数
   bindTextAreaBlur: function (e) {
-    this.data.detail = e.detail.value
+    var that=this
+    var value = e.detail.value
+    that.setData({
+      detail:value
+    })
   },
   
 
@@ -212,15 +216,19 @@ Page({
         }
         else if (res.data.error_code == 0) {
           wx.showToast({
-            title: '噼里啪啦，动态发布！',
+            title: '噼里啪啦！',
             icon: 'success',
             duration: 1000,
             success: function () {
+              that.setData({
+                detail: ''
+              })
               setTimeout(function () {
-                wx.switchTab({ url: '/pages/show/show' })
+                wx.reLaunch({ url: '/pages/show/show' })
               }, 1000);
             }
           })
+         
         }
       },
       
