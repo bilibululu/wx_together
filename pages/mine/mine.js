@@ -363,21 +363,5 @@ agree:function(e){
       })
     }
   })
-},
-//显示联系方式
-showcontact:function(e){
-  var that=this;
-  var contact = e.currentTarget.dataset.contact
-  wx.showModal({
-    title: '申请人联系方式',
-    content: contact,
-    success(res) {
-      if (res.confirm) {
-        console.log('用户点击确定')
-      } else if (res.cancel) {
-        console.log('用户点击取消')
-      }
-    }
-  })
 }
 })

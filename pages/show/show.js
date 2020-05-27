@@ -400,7 +400,7 @@ Page({
                     "touser": openid,
                   //模板id
                     "template_id": template_id,
-                    "page": "index",
+                    "page": "mine",
                     "miniprogram_state": "developer",
                     "lang": "zh_CN",
                     "data": {
