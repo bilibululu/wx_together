@@ -8,7 +8,7 @@
 </view>
 
 <view class="textarea">
-  <textarea class="textinput" placeholder-style="color:#888888;font-size:34rpx" placeholder="~~发布之前(*╹▽╹*)要先选择动态分区哦~~~最多输入200字~" maxlength="100" bindinput="bindTextAreaBlur"></textarea>
+  <textarea class="textinput" placeholder-style="color:#888888;font-size:34rpx" placeholder="~~发布之前(*╹▽╹*)要先选择动态分区哦~~~~最多输入200字，且务必写清楚组队内容（时间、地点、人数、内容）~~" maxlength="100" bindinput="bindTextAreaBlur"></textarea>
 </view>
 
 

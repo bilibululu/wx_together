@@ -172,7 +172,7 @@ button[disabled]:not([type]) {
   -webkit-box-shadow: 0px -0.6px 5px 2px #dddddd99;
 }
 
-/* 这个属性特别重要！！不然样式会崩掉 */
+
 
 .topTabSwiper:after {
   content: "";
@@ -215,14 +215,7 @@ button[disabled]:not([type]) {
   line-height: 4.6vh;
 }
 
-/* .center-tab1 {
-  width: 25vw;
-  float: left;
-  text-align: center;
-  padding: 10rpx 0;
-  height: 6vh;
-  line-height: 4.6vh;
-} */
+
 
 .two-tab-line {
   width: 10vw;
@@ -232,14 +225,6 @@ button[disabled]:not([type]) {
   margin-bottom: 0.2vh;
 }
 
-/* .tab {
-  float: left;
-  width: 25vw;
-  text-align: center;
-  padding: 10rpx 0;
-  height: 6vh;
-  line-height: 4.6vh;
-} */
 
 .one-page {
   background: white;
