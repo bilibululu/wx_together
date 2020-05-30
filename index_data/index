@@ -5,7 +5,6 @@ create table verified
 vsn int(10) not null primary key
 vname varchar(10) not null,
 vopenid varchar(20) not null,
-vnickname varchar(20) not null,
 vwxoqq varchar(20) not null,
 vbool int not null
 );
@@ -20,9 +19,15 @@ pheadport varchar(100) not null,
 parea int not null,
 ptext text not null,
 ptime int(11),
-pphoto varchar(100) not null,
-primary key(message_id,pvsn),
-foreign key(pvsn) references verified(vsn)
+total_request int(3) not null,
+pstate int(1) not null,
+primary key(message_id,pvsn)
 );
-
+create table request
+(
+rid INT(100) PRIMARY KEY,
+rmessageid INT(100) NOT NULL,
+ropenid VARCHAR(100) NOT NULL,
+ifaccept INT(1) NOT NULL
+);
 
